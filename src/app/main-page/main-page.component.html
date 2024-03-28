@@ -34,15 +34,33 @@
   </div>
 
   <div class="hello">
-    <h2 data-text="Dzień Dobry Maciej">Dzień Dobry Maciej</h2>
+    <h2 data-text="Dzień Dobry Maciej">Dzień Dobry {{username}}</h2>
   </div>
 
-  <div class="callendar">
-    <h3>MARZEC</h3>
-      <div class="row" *ngFor="let row of [0, 1, 2, 3]">
-        <div class="square" *ngFor="let col of [0, 1, 2, 3, 4, 5, 6]"></div>
-      </div>
+  <div class="monthText">
+    <h3>{{this.month.toUpperCase()}}</h3>
+   </div>
+   <div class="container">
+    <div class="row">
+      <div class ="square" *ngFor="let day of [1,2,3,4,5,6,7]"> {{day}} </div>
+    </div>
+    <div class="row">
+      <div class ="square" *ngFor="let day of [8,9,10,11,12,13,14]"> {{day}} </div>
+    </div>
+    <div class="row">
+      <div class ="square" *ngFor="let day of [15,16,17,18,19,20,21]"> {{day}} </div>
+    </div>
+    <div class="row">
+      <div class ="square" *ngFor="let day of [22,23,24,25,26,27,28]"> {{day}} </div>
+    </div>
+    <div class="row">
+      <div class ="square" *ngFor="let day of generateLastRow()"> {{day}} </div>
+    </div>
+
+
+  </div>
+
   </div>
 
 
-</div>
+

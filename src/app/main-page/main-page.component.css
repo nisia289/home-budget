@@ -100,20 +100,41 @@ h2:after {
   animation-delay: 6s;
 }
 
-.callendar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.square-container {
+  height: 500px; /* Wysokość kontenera */
+  width: 800px;
+  background-color: black;
+  margin: auto;
+}
+
+.monthText {
+  opacity: 0; /* Początkowa wartość przezroczystości */
+  animation: fadeIn 6s forwards; /* Ustawienie animacji */
+  animation-delay: 4s;
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin:auto;
+  width: 46%;
   opacity: 0; /* Początkowa wartość przezroczystości */
   animation: fadeIn 6s forwards; /* Ustawienie animacji */
   animation-delay: 4s;
 }
 
 .square {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   margin: 5px;
   background-color: #007bff;
+  text-align: left;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: blue;
 }
 
 @keyframes fadeIn {

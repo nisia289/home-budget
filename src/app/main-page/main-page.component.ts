@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -7,13 +7,26 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./main-page.component.css'],
 
 })
-export class MainPageComponent {
+export class MainPageComponent implements OnInit {
 
   przychodyClicked = false;
   wydatkiClicked = false;
   transakcjeClicked = false;
   oplatyClicked = false;
   kontoClicked = false;
+  currentDate: Date = new Date();
+  currentMonthNumber: number = this.currentDate.getMonth() + 1;
+  currentYear: number = this.currentDate.getFullYear();
+  numberOfDays: number = this.getDaysInMonth(this.currentMonthNumber, this.currentYear);
+  lastRow: number[] = [];
+  day = 0;
+  month: string = this.currentDate.toLocaleString('default', {month: 'long'});
+  username: string = "Maciej";
+
+
+  ngOnInit(): void {
+
+  }
 
   toggleOption(optionId: string) {
     switch(optionId) {
@@ -58,5 +71,24 @@ export class MainPageComponent {
 
     }
   }
+
+  getDaysInMonth(month: number, year: number) {
+    return new Date(year, month, 0).getDate();
+  }
+
+  generateLastRow() {
+    this.day = 29;
+    for(let i = 0; i <= this.numberOfDays - 29; i++) {
+      this.lastRow[i] = this.day;
+      this.day++;
+    }
+    return this.lastRow;
+  }
+
+  convertDayOfTheWeek(day: string) {
+
+  }
+
+
 
 }
