@@ -6,3 +6,18 @@
     PASSWORD: {{user.password}} <br>
   </li>
 </ul>
+
+<h1>Dodaj Usera</h1>
+
+<form>
+  <input type="text" [(ngModel)]="service.formData.username" name="username" placeholder="Username">
+  <input type="password" [(ngModel)]="service.formData.password" name="password" placeholder="Password">
+  <button type="submit" (click)="onSubmit()">Dodaj do bazy danych</button>
+  <!-- Możesz dodać więcej pól związanych z model.userBudgets itp. -->
+</form>
+
+<h1>Usun usera</h1>
+<form>
+  <input type="text" [(ngModel)]="this.idToDelete" name="idToDelete" placeholder="idToDelete">
+<button type="submit"(click)="deleteUser(idToDelete)">Usun usera</button>
+</form>

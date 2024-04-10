@@ -1,0 +1,39 @@
+<div class = "row" id = "menu">
+  <div  class="col-2" >
+    <div class = "option" *ngIf="mainpageClicked==false" (click)="toggleOption('option6')">
+      Strona Główna
+    </div>
+    <div class ="option-clicked" *ngIf="mainpageClicked==true">Strona Główna</div>
+  </div>
+  <div  class="col-2" >
+    <div class = "option" *ngIf="przychodyClicked==false" (click)="toggleOption('option1')">
+      Przychody
+    </div>
+    <div class ="option-clicked" *ngIf="przychodyClicked==true">Przychody</div>
+  </div>
+  <div  class="col-2" >
+    <div class = "option" *ngIf="wydatkiClicked==false" (click)="toggleOption('option2')">
+      Wydatki
+    </div>
+    <div class ="option-clicked" *ngIf="wydatkiClicked==true">Wydatki</div>
+  </div>
+  <div  class="col-2" >
+    <div class = "option" *ngIf="transakcjeClicked==false" (click)="toggleOption('option3')">
+      Transakcje
+    </div>
+    <div class ="option-clicked" *ngIf="transakcjeClicked==true">Transakcje</div>
+  </div>
+  <div class = "col-2" >
+    <div class = "option" *ngIf="oplatyClicked==false" (click)="toggleOption('option4')">
+      Opłaty
+    </div>
+    <div class ="option-clicked" *ngIf="oplatyClicked==true">Opłaty</div>
+  </div>
+  <div  class="col-2" >
+    <div class = "option" *ngIf="kontoClicked==false" (click)="toggleOption('option5')">
+      Konto
+    </div>
+    <div class ="option-clicked" *ngIf="kontoClicked==true">Konto</div>
+  </div>
+</div>
+<router-outlet></router-outlet>

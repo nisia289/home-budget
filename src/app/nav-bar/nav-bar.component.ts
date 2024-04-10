@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css'],
-
+  selector: 'app-nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.css']
 })
-export class MainPageComponent implements OnInit {
+export class NavBarComponent {
 
   constructor(private router: Router) {}
 
@@ -18,20 +15,7 @@ export class MainPageComponent implements OnInit {
   transakcjeClicked = false;
   oplatyClicked = false;
   kontoClicked = false;
-  przychodyClicked2 = false;
-  currentDate: Date = new Date();
-  currentMonthNumber: number = this.currentDate.getMonth() + 1;
-  currentYear: number = this.currentDate.getFullYear();
-  numberOfDays: number = this.getDaysInMonth(this.currentMonthNumber, this.currentYear);
-  lastRow: number[] = [];
-  day = 0;
-  month: string = this.currentDate.toLocaleString('default', {month: 'long'});
-  username: string = "Maciej";
-
-
-  ngOnInit(): void {
-
-  }
+  mainpageClicked = false;
 
   toggleOption(optionId: string) {
     switch(optionId) {
@@ -41,8 +25,9 @@ export class MainPageComponent implements OnInit {
         this.transakcjeClicked = false;
         this.oplatyClicked = false;
         this.kontoClicked = false;
-        console.log(this.przychodyClicked)
-        console.log(this.przychodyClicked)
+        this.mainpageClicked = false;
+        this.router.navigate(['/przychody']);
+
         break;
         case 'option2' :
           this.przychodyClicked = false;
@@ -50,6 +35,8 @@ export class MainPageComponent implements OnInit {
           this.transakcjeClicked = false;
           this.oplatyClicked = false;
           this.kontoClicked = false;
+          this.mainpageClicked = false;
+          this.router.navigate(['/wydatki']);
 
           break;
           case 'option3' :
@@ -58,6 +45,8 @@ export class MainPageComponent implements OnInit {
             this.transakcjeClicked = true;
             this.oplatyClicked = false;
             this.kontoClicked = false;
+            this.mainpageClicked = false;
+            this.router.navigate(['/transakcje']);
             break;
             case 'option4' :
               this.przychodyClicked = false;
@@ -65,6 +54,8 @@ export class MainPageComponent implements OnInit {
               this.transakcjeClicked = false;
               this.oplatyClicked = true;
               this.kontoClicked = false;
+              this.mainpageClicked = false;
+              this.router.navigate(['/oplaty']);
               break;
               case 'option5' :
                 this.przychodyClicked = false;
@@ -72,29 +63,31 @@ export class MainPageComponent implements OnInit {
                 this.transakcjeClicked = false;
                 this.oplatyClicked = false;
                 this.kontoClicked = true;
+                this.mainpageClicked = false;
+                this.router.navigate(['/konto']);
                 break;
+                case 'option6' :
+                  this.przychodyClicked = false;
+                  this.wydatkiClicked = false;
+                  this.transakcjeClicked = false;
+                  this.oplatyClicked = false;
+                  this.kontoClicked = false;
+                  this.mainpageClicked = true;
+                  this.router.navigate(['/home']);
+
+                  break;
 
     }
   }
 
-  getDaysInMonth(month: number, year: number) {
-    return new Date(year, month, 0).getDate();
-  }
-
-  generateLastRow() {
-    this.day = 29;
-    for(let i = 0; i <= this.numberOfDays - 29; i++) {
-      this.lastRow[i] = this.day;
-      this.day++;
-    }
-    return this.lastRow;
-  }
-
-  goToTest() {
+  goToPrzychody() {
     this.router.navigate(['/crudtest']);
-    console.log("test");
+    console.log("aaaa");
+    this.przychodyClicked = true;
+        this.wydatkiClicked = false;
+        this.transakcjeClicked = false;
+        this.oplatyClicked = false;
+        this.kontoClicked = false;
   }
-
-
 
 }

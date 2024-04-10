@@ -1,0 +1,60 @@
+.option{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.5s, text-decoration 0.5s;
+  font-weight: bolder;
+}
+
+.option-clicked{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.5s, text-decoration 0.5s;
+  color: blue;
+  font-weight: bolder;
+}
+
+#optionClicked {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.5s, text-decoration 0.5s;
+  color: blue;
+  text-decoration: underline;
+}
+
+.col-2 {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.5s, text-decoration 0.5s;
+}
+
+.col-2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  bottom: 0px;
+  left: 0;
+  transition: background-color 0.5s;
+}
+
+.col-2:hover {
+  color: blue;
+  text-decoration: underline;
+}
