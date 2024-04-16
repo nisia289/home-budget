@@ -20,15 +20,20 @@ export class LoginComponent {
     this.service.checkUser(this.username, this.password).subscribe({
       next: res=>{
         if (res.success) {
+          alert("Logowanie powiodło się!");
           console.log("SUKCES!!!");
           this.isLoggedIn = true;
           this.router.navigate(['/home']);
         }
         else {
+          alert("Logowanie nieudane: " + res.message);
           console.log(res.message);
         }
       },
-      error: err=>{console.log(err);}
+      error: err => {
+        alert("Wystąpił błąd podczas logowania.");
+        console.log(err);
+      }
     })
     this.service.setLoggedInUsername(this.username);
   }
