@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BudzetDomowy.Models;
+using Microsoft.AspNetCore.Identity;//dodalam
 
 namespace BudzetDomowy.Controllers
 {
@@ -77,6 +78,12 @@ namespace BudzetDomowy.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
+            // Utwórz instancję hashera
+            var hasher = new PasswordHasher<User>();
+
+            // Hashuj hasło przed dodaniem użytkownika
+            user.Password = hasher.HashPassword(user, user.Password);
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
@@ -86,10 +93,11 @@ namespace BudzetDomowy.Controllers
         [HttpPost("checkUser")]
         public IActionResult CheckUser([FromBody] User loginUser)
         {
-            // Wyszukiwanie użytkownika po nazwie użytkownika
             var user = _context.Users.FirstOrDefault(u => u.Username == loginUser.Username);
+            // Utwórz instancję hashera
+            var hasher = new PasswordHasher<User>();
 
-            if (user != null && VerifyPassword(loginUser.Password, user.Password))
+            if (user != null && hasher.VerifyHashedPassword(user, user.Password, loginUser.Password) == PasswordVerificationResult.Success)
             {
                 return Ok(new { success = true, message = "User is valid" });
             }
@@ -99,10 +107,17 @@ namespace BudzetDomowy.Controllers
             }
         }
 
-        private bool VerifyPassword(string inputPassword, string storedPassword)
+        private bool VerifyPassword(string inputPassword, string storedPassword, string storedHashedPassword)
         {
+
+            // Utwórz instancję hashera
+            var hasher = new PasswordHasher<User>();
+
             // Sprawdź hasło – idealnie użyj mechanizmu hashowania
-            return inputPassword == storedPassword; // Proste porównanie, w praktyce użyj hashowania!
+            //return inputPassword == storedPassword;
+
+            // Sprawdź, czy zahashowane hasło zgadza się z podanym hasłem
+            return hasher.VerifyHashedPassword(new User(), storedHashedPassword, inputPassword) == PasswordVerificationResult.Success;
         }
 
 
