@@ -83,6 +83,29 @@ namespace BudzetDomowy.Controllers
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
+        [HttpPost("checkUser")]
+        public IActionResult CheckUser([FromBody] User loginUser)
+        {
+            // Wyszukiwanie użytkownika po nazwie użytkownika
+            var user = _context.Users.FirstOrDefault(u => u.Username == loginUser.Username);
+
+            if (user != null && VerifyPassword(loginUser.Password, user.Password))
+            {
+                return Ok(new { success = true, message = "User is valid" });
+            }
+            else
+            {
+                return Ok(new { success = false, message = "User is not valid" });
+            }
+        }
+
+        private bool VerifyPassword(string inputPassword, string storedPassword)
+        {
+            // Sprawdź hasło – idealnie użyj mechanizmu hashowania
+            return inputPassword == storedPassword; // Proste porównanie, w praktyce użyj hashowania!
+        }
+
+
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
