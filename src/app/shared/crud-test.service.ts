@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CrudTest } from './crud-test.model';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +10,9 @@ import { CrudTest } from './crud-test.model';
 export class CrudTestService {
 
   url: string = 'https://localhost:7216/api/Users';
+  urlLogin: string = 'https://localhost:7216/api/Users/checkUser';
   list: CrudTest[] = [];
+  loggedInUsername: string = '';
   formData : CrudTest = new CrudTest();
   constructor(private http: HttpClient) { }
 
@@ -22,15 +26,11 @@ export class CrudTestService {
     })
   }
 
-  postUser() {
-    // Pobierz username i password z formData
-    const { username, password } = this.formData;
-
-    // Zdefiniuj resztę danych statycznie
+  postUser(Username: string, Password: string) {
     const userData = {
       userId: 0,
-      username: username,
-      password: password,
+      username: Username,
+      password: Password,
       userBudgets: []
     };
     return this.http.post(this.url, userData);
@@ -41,9 +41,21 @@ export class CrudTestService {
     return this.http.delete(`${this.url}/${userId}`);
   }
 
-  updateUser(userId: number, userData: any) {
-    const url = `${this.url}/${userId}`;
-    return this.http.put(url, userData);
+  updateUser(userId: number,) {
+    const { username, password } = this.formData;
+    const userData = {
+      username: username,
+      password: password,
+      userBudgets: []
+    };
+  }
+
+  checkUser(username: string, password: string): Observable<any> {
+    return this.http.post(this.urlLogin, { username, password });
+  }
+
+  setLoggedInUsername(username: string) {
+    this.loggedInUsername = username;
   }
 
 }

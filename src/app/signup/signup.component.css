@@ -1,0 +1,25 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+.form-outline.form-white input[type=text],
+.form-outline.form-white input[type=email],
+.form-outline.form-white input[type=password] {
+}
+
+.form-outline.form-white label {
+}
+
+.btn-outline-light {
+}
+
+.goToLoginButton {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}

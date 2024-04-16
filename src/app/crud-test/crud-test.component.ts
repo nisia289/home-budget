@@ -14,12 +14,12 @@ export class CrudTestComponent implements OnInit {
   ngOnInit(): void {
     this.service.refreshList();
   }
-  onSubmit() {
-    this.service.postUser().subscribe({
-      next: res=>{console.log(res);},
-      error: err=>{console.log(err);}
-    })
-  }
+  //onSubmit() {
+    //this.service.postUser().subscribe({
+     // next: res=>{console.log(res);},
+     // error: err=>{console.log(err);}
+    //})
+ // }
 
   deleteUser(idToDelete: number) {
     this.service.deleteUser(idToDelete).subscribe({
@@ -27,5 +27,6 @@ export class CrudTestComponent implements OnInit {
       error: err=>{console.log(err);}
     })
   }
+
 
 }

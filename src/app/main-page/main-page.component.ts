@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router';
+import { CrudTestService } from '../shared/crud-test.service';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, public service: CrudTestService) {}
 
   przychodyClicked = false;
   wydatkiClicked = false;
@@ -26,7 +27,7 @@ export class MainPageComponent implements OnInit {
   lastRow: number[] = [];
   day = 0;
   month: string = this.currentDate.toLocaleString('default', {month: 'long'});
-  username: string = "Maciej";
+  username: string = this.service.loggedInUsername;
 
 
   ngOnInit(): void {

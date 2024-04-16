@@ -14,6 +14,8 @@ import { TransakcjeComponent } from './transakcje/transakcje.component';
 import { OplatyComponent } from './oplaty/oplaty.component';
 import { KontoComponent } from './konto/konto.component';
 import { FormsModule } from '@angular/forms';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { FormsModule } from '@angular/forms';
     TransakcjeComponent,
     OplatyComponent,
     KontoComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,13 +38,17 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
+      {path: '', redirectTo: '/login', pathMatch: 'full'},
       {path: 'home', component: MainPageComponent},
       {path: 'crudtest', component: CrudTestComponent},
       {path: 'przychody', component: PrzychodyComponent},
       {path: 'wydatki', component: WydatkiComponent},
       {path: 'transakcje', component: TransakcjeComponent},
       {path: 'oplaty', component: OplatyComponent},
-      {path: 'konto', component: KontoComponent}
+      {path: 'konto', component: KontoComponent},
+      {path: 'Home', component: NavBarComponent},
+      {path: 'signup', component: SignupComponent},
+      {path: 'login', component: LoginComponent}
     ])
   ],
   providers: [],
