@@ -1,2 +1,25 @@
 <app-nav-bar></app-nav-bar>
-<p>konto works!</p>
+<div class="container">
+  <br><br>
+  <div class="userIcon">
+    <img src="assets/user.png" style="height: 13%; width: 13%;">
+  </div>
+  <div class="userName">
+    {{this.username}}
+  </div>
+  <br>
+    <h1>Twoje Budżety</h1>
+  <div class="add">
+    <img src="assets/plus.png" id="addBudgetButton" style="height: 5%; width: 5%;" (click)="addBudget()">
+    <span style="display: block;">Nowy Budżet</span>
+  </div>
+  <br><br>
+  <div class="budgetList">
+    <div class="budget">
+      Budżet HeHe
+    </div>
+    <div class="budget">
+      Budżet Ninusia
+    </div>
+  </div>
+</div>

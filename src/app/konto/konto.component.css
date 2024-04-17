@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+}
+
+.userName {
+  font-weight: 900;
+  font-size: large;
+}
+
+.add{
+  font-size: small;
+}
+
+#addBudgetButton:hover{
+  background-color: green;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.budgetList {
+  display: flex; /* Ustawienie kontenera na flexbox */
+  justify-content: center; /* Wycentrowanie elementów wzdłuż osi X */
+  flex-direction: column; /* Ustawienie układu w kolumnie */
+  align-items: center; /* Wycentrowanie elementów wzdłuż osi Y */
+  gap: 20px;
+}
+
+
+.budget{
+  width: 80%;
+  background-color: white;
+  color: black;
+  font-size: xx-large;
+  border: 1px solid black;
+}
+
+.budget:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
