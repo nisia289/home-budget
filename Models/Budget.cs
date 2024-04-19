@@ -1,4 +1,6 @@
-﻿namespace BudzetDomowy.Models
+﻿using System.Text.Json.Serialization;
+
+namespace BudzetDomowy.Models
 {
     public class Budget
     {
@@ -6,9 +8,14 @@
         public string Name { get; set; }
         public string Description { get; set; }
 
+        
+
         public ICollection<UserBudget> UserBudgets { get; set; }
+        
         public ICollection<Income> Incomes { get; set; }
+        
         public ICollection<Expenditure> Expenditures { get; set; }
+        
         public ICollection<Payment> Payments { get; set; }
 
 

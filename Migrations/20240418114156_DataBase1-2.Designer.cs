@@ -4,6 +4,7 @@ using BudzetDomowy.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BudzetDomowy.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240418114156_DataBase1-2")]
+    partial class DataBase12
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -240,10 +243,10 @@ namespace BudzetDomowy.Migrations
                     b.Property<int>("BudgetId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PermissionId")
+                    b.Property<int>("PermissionId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("RoleId")
+                    b.Property<int>("RoleId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
@@ -321,25 +324,37 @@ namespace BudzetDomowy.Migrations
 
             modelBuilder.Entity("BudzetDomowy.Models.UserBudget", b =>
                 {
-                    b.HasOne("BudzetDomowy.Models.Budget", null)
+                    b.HasOne("BudzetDomowy.Models.Budget", "Budget")
                         .WithMany("UserBudgets")
                         .HasForeignKey("BudgetId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BudzetDomowy.Models.Permission", null)
+                    b.HasOne("BudzetDomowy.Models.Permission", "Permission")
                         .WithMany("UserBudgets")
-                        .HasForeignKey("PermissionId");
+                        .HasForeignKey("PermissionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("BudzetDomowy.Models.Role", null)
+                    b.HasOne("BudzetDomowy.Models.Role", "Role")
                         .WithMany("UserBudgets")
-                        .HasForeignKey("RoleId");
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("BudzetDomowy.Models.User", null)
+                    b.HasOne("BudzetDomowy.Models.User", "User")
                         .WithMany("UserBudgets")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Budget");
+
+                    b.Navigation("Permission");
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BudzetDomowy.Models.Budget", b =>

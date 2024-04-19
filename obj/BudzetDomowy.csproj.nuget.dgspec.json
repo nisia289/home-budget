@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nitaj\\Desktop\\backend\\home-budget\\BudzetDomowy.csproj": {}
+    "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\BudzetDomowy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nitaj\\Desktop\\backend\\home-budget\\BudzetDomowy.csproj": {
+    "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\BudzetDomowy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nitaj\\Desktop\\backend\\home-budget\\BudzetDomowy.csproj",
+        "projectUniqueName": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\BudzetDomowy.csproj",
         "projectName": "BudzetDomowy",
-        "projectPath": "C:\\Users\\nitaj\\Desktop\\backend\\home-budget\\BudzetDomowy.csproj",
-        "packagesPath": "C:\\Users\\nitaj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nitaj\\Desktop\\backend\\home-budget\\obj\\",
+        "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\BudzetDomowy.csproj",
+        "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nitaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\macie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -41,6 +41,25 @@ namespace BudzetDomowy.Controllers
             return budget;
         }
 
+        [HttpGet("byname/{name}")]
+        public async Task<ActionResult<int>> GetBudgetIdByName(string name)
+        {
+            var budget = await _context.Budgets
+                                       .Where(b => b.Name == name)
+                                       .FirstOrDefaultAsync();
+
+            if (budget == null)
+            {
+                return NotFound("Budget with the given name not found.");
+            }
+
+            return budget.BudgetId;
+        }
+
+
+
+
+
         // PUT: api/Budgets/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

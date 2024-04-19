@@ -42,6 +42,19 @@ namespace BudzetDomowy.Controllers
             return user;
         }
 
+        [HttpGet("username/{username}")]
+        public ActionResult<int> GetUserIdByUsername(string username)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Username == username);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+            return user.UserId;
+        }
+
+       
+
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

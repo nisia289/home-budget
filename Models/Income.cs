@@ -1,4 +1,6 @@
-﻿namespace BudzetDomowy.Models
+﻿using System.Text.Json.Serialization;
+
+namespace BudzetDomowy.Models
 {
     public class Income
     {
@@ -11,9 +13,9 @@
         public int BudgetId { get; set; } // foreign key
 
         public int UserId { get; set; } //foreign key
-
+        
         public Budget Budget { get; set; }
-
+        
         public User User { get; set; }
     }
 }
