@@ -1,0 +1,18 @@
+<section class="vh-100 gradient-custom">
+  <div class="container">
+    <div class="budget-data-container">
+      <h2>Utwórz swój budżet domowy</h2>
+    <form>
+        <div class="mb-3">
+            <label for="inputName" class="form-label">Nazwa Budżetu Domowego</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Wpisz nazwę nowego budżetu domowego" [(ngModel)]="name" name="name"/>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Opis</label>
+          <textarea class="form-control" id="description" rows="4" placeholder="Wpisz opis budżetu domowego" [(ngModel)]="description" name="description"></textarea>
+      </div>
+        <button type="submit" class="btn btn-primary" (click)="createBudget()">Utwórz</button>
+    </form>
+    </div>
+  </div>
+</section>

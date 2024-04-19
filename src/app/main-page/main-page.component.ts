@@ -28,10 +28,12 @@ export class MainPageComponent implements OnInit {
   day = 0;
   month: string = this.currentDate.toLocaleString('default', {month: 'long'});
   username: string = this.service.loggedInUsername;
+  userId: number = 0;
 
 
   ngOnInit(): void {
-
+    this.fetchUserId(this.username);
+    console.log(this.userId);
   }
 
   toggleOption(optionId: string) {
@@ -94,6 +96,18 @@ export class MainPageComponent implements OnInit {
   goToTest() {
     this.router.navigate(['/crudtest']);
     console.log("test");
+  }
+
+  fetchUserId(username: string): void {
+    this.service.getUserIdByUsername(username).subscribe({
+      next: (id) => {
+        this.userId = id;
+        console.log('User ID:', this.userId);
+      },
+      error: (error) => {
+        console.error('Error fetching user ID:', error);
+      }
+    });
   }
 
 

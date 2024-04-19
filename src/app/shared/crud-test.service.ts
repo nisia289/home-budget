@@ -11,8 +11,10 @@ export class CrudTestService {
 
   url: string = 'https://localhost:7216/api/Users';
   urlLogin: string = 'https://localhost:7216/api/Users/checkUser';
+  urlToGetIdByUsername: string = 'https://localhost:7216/api/Users/username';
   list: CrudTest[] = [];
   loggedInUsername: string = '';
+  userID: number = 0;
   formData : CrudTest = new CrudTest();
   constructor(private http: HttpClient) { }
 
@@ -56,6 +58,14 @@ export class CrudTestService {
 
   setLoggedInUsername(username: string) {
     this.loggedInUsername = username;
+  }
+
+  setUserID(userID: number) {
+    this.userID = userID;
+  }
+
+  getUserIdByUsername(username: string): Observable<number> {
+    return this.http.get<number>(`${this.urlToGetIdByUsername}/${username}`);
   }
 
 }

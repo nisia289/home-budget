@@ -16,6 +16,7 @@ import { KontoComponent } from './konto/konto.component';
 import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { BudgetCreationComponent } from './budget-creation/budget-creation.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { LoginComponent } from './login/login.component';
     KontoComponent,
     SignupComponent,
     LoginComponent,
+    BudgetCreationComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { LoginComponent } from './login/login.component';
       {path: 'konto', component: KontoComponent},
       {path: 'Home', component: NavBarComponent},
       {path: 'signup', component: SignupComponent},
-      {path: 'login', component: LoginComponent}
+      {path: 'login', component: LoginComponent},
+      {path: 'budget-creation', component: BudgetCreationComponent}
     ])
   ],
   providers: [],

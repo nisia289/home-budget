@@ -15,11 +15,9 @@
   </div>
   <br><br>
   <div class="budgetList">
-    <div class="budget">
-      Budżet HeHe
-    </div>
-    <div class="budget">
-      Budżet Ninusia
+
+    <div class="budget" *ngFor="let budget of budgetService.list">
+      {{budget.name}}
     </div>
   </div>
 </div>
