@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { BudgetCreationComponent } from './budget-creation/budget-creation.component';
+import { BudgetDetailsComponent } from './budget-details/budget-details.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { BudgetCreationComponent } from './budget-creation/budget-creation.compo
     SignupComponent,
     LoginComponent,
     BudgetCreationComponent,
+    BudgetDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { BudgetCreationComponent } from './budget-creation/budget-creation.compo
       {path: 'Home', component: NavBarComponent},
       {path: 'signup', component: SignupComponent},
       {path: 'login', component: LoginComponent},
-      {path: 'budget-creation', component: BudgetCreationComponent}
+      {path: 'budget-creation', component: BudgetCreationComponent},
+      {path: 'budget-details', component: BudgetDetailsComponent}
     ])
   ],
   providers: [],

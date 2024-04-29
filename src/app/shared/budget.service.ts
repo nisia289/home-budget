@@ -14,6 +14,8 @@ export class BudgetService {
   urlToGetIdByName: string = 'https://localhost:7216/api/Budgets/byname';
   urlToGetBudgetsById: string = 'https://localhost:7216/api/UserBudgets/api/budgets/byuser';
   list: BudgetModel[] = [];
+  clickedBudget: BudgetModel = new BudgetModel;
+  newBudgetId: number = 0;
 
   budgetData: BudgetModel = new BudgetModel();
 
@@ -28,6 +30,7 @@ export class BudgetService {
       payments: []
     };
     return this.http.post(this.url, budgetData);
+
   }
 
   getBudgets(id: number) {
@@ -48,5 +51,24 @@ export class BudgetService {
     return this.http.get<number>(`${this.urlToGetIdByName}/${name}`);
   }
 
+  setBudgetId(id: number) {
+    this.newBudgetId = id;
+  }
+
+///////////////////////////////////////////////////////////////// Pobiera jeden budżet po podaniu id tego budżetu
+  getSingleBudget(id: number) {
+    const url = `${this.url}/${id}`; // Zmodyfikowany URL z przekazanym id
+    this.http.get<BudgetModel>(url) // Zakładam, że oczekiwany typ to BudgetModel[]
+    .subscribe({
+        next: res => {
+            this.clickedBudget = res; // Przypisanie odpowiedzi do listy, zakładając, że odpowiedź jest już typu BudgetModel[]
+            console.log(res);
+        },
+        error: err => {
+            console.error('Error fetching budgets:', err);
+        }
+    });
+  }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }

@@ -15,9 +15,11 @@
   </div>
   <br><br>
   <div class="budgetList">
-
-    <div class="budget" *ngFor="let budget of budgetService.list">
-      {{budget.name}}
+    <div class="budget" *ngFor="let budget of budgetService.list"
+         [attr.id]="'budget-' + budget.budgetId"
+         (click)="printInfo(budget, budget.budgetId)">
+      {{ budget.name }}
     </div>
-  </div>
+</div>
+
 </div>

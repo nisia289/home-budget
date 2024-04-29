@@ -33,6 +33,7 @@ export class BudgetCreationComponent implements OnInit {
       tap(id => {
         this.budgetId = id; // Przypisanie ID do zmiennej
         console.log('Budget ID:', this.budgetId);
+        this.budgetService.setBudgetId(this.budgetId);
       }),
       switchMap(() => {
         // Teraz wykonaj `postUserBudget` używając nowo uzyskanego `budgetId`
@@ -75,5 +76,7 @@ export class BudgetCreationComponent implements OnInit {
 
     });
   }
+
+
 
 }
