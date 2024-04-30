@@ -154,5 +154,55 @@ namespace BudzetDomowy.Controllers
         {
             return _context.Users.Any(e => e.UserId == id);
         }
+
+        /////////////////////////////////// END POINT DO PRZESYŁANIA UAKTUALNIANIA ZDJĘCIA PROFILOWEGO
+        
+        [HttpPost("upload-image/{userId}")]
+        public async Task<IActionResult> UploadUserImage(int userId, IFormFile image)
+        {
+            if (image == null || image.Length == 0)
+            {
+                return BadRequest("No image uploaded.");
+            }
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await image.CopyToAsync(memoryStream);
+                user.Image = memoryStream.ToArray();
+            }
+
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+
+            return Ok("Image uploaded successfully.");
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+
+        [HttpGet("{userId}/photo")]
+        public async Task<IActionResult> GetUserPhoto(int userId)
+        {
+            try
+            {
+                var user = await _context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
+
+                if (user == null || user.Image == null)
+                {
+                    return NotFound("User or photo not found.");
+                }
+
+                return File(user.Image, "image/jpeg"); // Assuming the image format is JPEG. Change if needed.
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
