@@ -12,6 +12,7 @@ export class CrudTestService {
   url: string = 'https://localhost:7216/api/Users';
   urlLogin: string = 'https://localhost:7216/api/Users/checkUser';
   urlToGetIdByUsername: string = 'https://localhost:7216/api/Users/username';
+  urlToUploadImage: string = 'https://localhost:7216/api/Users/upload-image';
   list: CrudTest[] = [];
   loggedInUsername: string = '';
   userID: number = 0;
@@ -65,7 +66,24 @@ export class CrudTestService {
   }
 
   getUserIdByUsername(username: string): Observable<number> {
-    return this.http.get<number>(`${this.urlToGetIdByUsername}/${username}`);
+    return this.http.get<number>(`${this.urlToGetIdByUsername}/${username}`)
+  }
+
+  uploadFile(file: File, id: number): void {
+    const url = `${this.urlToUploadImage}/${id}`;
+    const formData = new FormData();
+    formData.append('image', file);
+    console.log("TO JEST URL"+url);
+
+    this.http.post(url, formData, { responseType: 'text' })
+      .subscribe({
+        next: (response) => console.log('Image uploaded successfully!' + url, response),
+        error: (error) => console.error('Error uploading image', error)
+      });
+  }
+
+  getUserPhoto(userId: number): Observable<Blob> {
+    return this.http.get(`https://localhost:7216/api/Users/${userId}/photo`, { responseType: 'blob' });
   }
 
 }

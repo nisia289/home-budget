@@ -1,8 +1,10 @@
 <app-nav-bar></app-nav-bar>
 <div class="container">
   <br><br>
-  <div class="userIcon">
-    <img src="assets/user.png" style="height: 13%; width: 13%;">
+  <div class="userIcon" (click)="fileInput.click()">
+    <img *ngIf="!userPhoto" src="assets/user.png" style="height: 13%; width: 13%;">
+    <img *ngIf="userPhoto" [src]="userPhoto" alt="User Photo" style="height: 200px; width: 200px; border-radius: 50%;">
+    <input type="file" #fileInput (change)="onFileSelected($event)" style="display: none;" accept="image/*">
   </div>
   <div class="userName">
     {{this.username}}

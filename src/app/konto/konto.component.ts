@@ -13,6 +13,7 @@ export class KontoComponent implements OnInit{
 
   username: string = this.userService.loggedInUsername;
   idd: number = 0;
+  userPhoto: any;
 
   addBudget() {
     this.router.navigate(['/budget-creation']);
@@ -24,6 +25,7 @@ export class KontoComponent implements OnInit{
 
   ngOnInit(): void {
     this.budgetService.getBudgets(this.userService.userID);
+    this.getUserPhoto();
   }
 
   printInfo(budget: any, id: number): void {
@@ -31,6 +33,28 @@ export class KontoComponent implements OnInit{
     this.budgetService.setBudgetId(id);
     this.goToBudgetDetails();
   }
+
+  onFileSelected(event: any): void {
+    const file: File = event.target.files[0];
+    if (file) {
+      this.userService.uploadFile(file, this.userService.userID);
+    }
+  }
+
+  getUserPhoto() {
+    this.userService.getUserPhoto(this.userService.userID)
+      .subscribe((data: Blob) => {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          this.userPhoto = reader.result;
+          this.getUserPhoto();
+        }
+        reader.readAsDataURL(data);
+      }, error => {
+        console.error('Error fetching user photo:', error);
+      });
+  }
+
 
 }
 
