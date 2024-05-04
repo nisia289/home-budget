@@ -8,6 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class UserBudgetsService {
 
   url: string = 'https://localhost:7216/api/UserBudgets';
+  urlToDisplayBudgets: string = 'http://localhost:5000/api/budgets/byuser';
   userBudgetData : UserBudgetsModel = new UserBudgetsModel();
   constructor(private http: HttpClient ) { }
 
@@ -23,4 +24,6 @@ export class UserBudgetsService {
     console.log(budgetID);
     return this.http.post(this.url, userBudgetDataToSend);
   }
+
+  
 }

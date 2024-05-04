@@ -52,6 +52,10 @@ export class BudgetDetailsComponent implements OnInit {
     });
   }
 
+  selectBudget() {
+    this.userService.setChosenBudgetID(this.budgetService.clickedBudget.budgetId);
+  }
+
 
 
 }

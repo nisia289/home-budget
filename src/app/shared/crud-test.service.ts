@@ -16,6 +16,7 @@ export class CrudTestService {
   list: CrudTest[] = [];
   loggedInUsername: string = '';
   userID: number = 0;
+  chosenBudgetID: number = 0;
   formData : CrudTest = new CrudTest();
   constructor(private http: HttpClient) { }
 
@@ -84,6 +85,10 @@ export class CrudTestService {
 
   getUserPhoto(userId: number): Observable<Blob> {
     return this.http.get(`https://localhost:7216/api/Users/${userId}/photo`, { responseType: 'blob' });
+  }
+
+  setChosenBudgetID(id: number) {
+    this.chosenBudgetID = id;
   }
 
 }

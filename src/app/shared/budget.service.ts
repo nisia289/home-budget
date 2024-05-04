@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { BudgetModel } from './budget.model';
 
 @Injectable({
@@ -70,5 +70,9 @@ export class BudgetService {
     });
   }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+getBudgetName(budgetId: number): Observable<string> {
+  return this.http.get<{ name: string }>(`${this.url}/${budgetId}`).pipe(
+    map(response => response.name)
+  );
+}
 }
