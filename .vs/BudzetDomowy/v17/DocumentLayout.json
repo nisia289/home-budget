@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\migrations\\20240504113404_databasev1-6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:migrations\\20240504113404_databasev1-6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\migrations\\20240318134421_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:migrations\\20240318134421_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,18 +87,6 @@
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\migrations\\20240410112051_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:migrations\\20240410112051_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,37 +130,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20240430101535_DataBasev1-5.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240430101535_DataBasev1-5.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240430101535_DataBasev1-5.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240430101535_DataBasev1-5.cs",
-              "RelativeToolTip": "Migrations\\20240430101535_DataBasev1-5.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "20240504113404_DataBasev1-6.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240504113404_DataBasev1-6.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240504113404_DataBasev1-6.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240504113404_DataBasev1-6.cs",
+              "RelativeToolTip": "Migrations\\20240504113404_DataBasev1-6.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T10:15:36.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T11:34:04.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserBudgetsController.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\UserBudgetsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserBudgetsController.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\UserBudgetsController.cs",
-              "RelativeToolTip": "Controllers\\UserBudgetsController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAADwvz0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:28:32.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
@@ -160,12 +154,11 @@
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AQIAALQAAAAAAAAAAAAgwM0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:02:43.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T14:02:43.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "ExpendituresController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\ExpendituresController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExpendituresController.cs",
@@ -177,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -190,6 +183,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Income.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Income.cs",
+              "RelativeDocumentMoniker": "Models\\Income.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Income.cs",
+              "RelativeToolTip": "Models\\Income.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:36:58.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Expenditure.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Expenditure.cs",
+              "RelativeDocumentMoniker": "Models\\Expenditure.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Expenditure.cs",
+              "RelativeToolTip": "Models\\Expenditure.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:37:38.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IncomesController.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\IncomesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\IncomesController.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\IncomesController.cs",
+              "RelativeToolTip": "Controllers\\IncomesController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAgwDUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:30:51.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserBudgetsController.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\UserBudgetsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserBudgetsController.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\UserBudgetsController.cs",
+              "RelativeToolTip": "Controllers\\UserBudgetsController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAADwvz0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:28:32.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:36:26.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240318134421_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240318134421_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240318134421_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240318134421_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20240318134421_InitialCreate.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:28:15.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240430101535_DataBasev1-5.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240430101535_DataBasev1-5.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240430101535_DataBasev1-5.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240430101535_DataBasev1-5.cs",
+              "RelativeToolTip": "Migrations\\20240430101535_DataBasev1-5.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T10:15:36.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -197,12 +276,11 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:32:56.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T13:32:56.853Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "BudzetDomowy.http",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\BudzetDomowy.http",
               "RelativeDocumentMoniker": "BudzetDomowy.http",
@@ -214,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
@@ -222,12 +300,11 @@
               "RelativeToolTip": "Models\\ApplicationDbContext.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAA9wCAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:38:55.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T13:38:55.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "BudgetsController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\BudgetsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BudgetsController.cs",
@@ -239,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -251,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "Permission.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Permission.cs",
               "RelativeDocumentMoniker": "Models\\Permission.cs",
@@ -263,19 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Expenditure.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Expenditure.cs",
-              "RelativeDocumentMoniker": "Models\\Expenditure.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Expenditure.cs",
-              "RelativeToolTip": "Models\\Expenditure.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA7wBMAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:37:38.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "UserBudget.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\UserBudget.cs",
               "RelativeDocumentMoniker": "Models\\UserBudget.cs",
@@ -287,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "UserBudgetResponse.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\UserBudgetResponse.cs",
               "RelativeDocumentMoniker": "Models\\UserBudgetResponse.cs",
@@ -299,31 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "Models\\Payment.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Payment.cs",
-              "RelativeToolTip": "Models\\Payment.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAwwBQAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:36:26.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Income.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Income.cs",
-              "RelativeDocumentMoniker": "Models\\Income.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Income.cs",
-              "RelativeToolTip": "Models\\Income.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA3wBEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:36:58.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Budget.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Budget.cs",
               "RelativeDocumentMoniker": "Models\\Budget.cs",
@@ -335,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Models\\Role.cs",
@@ -347,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
@@ -359,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "20240418115235_DataBasev1-4.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240418115235_DataBasev1-4.cs",
               "RelativeDocumentMoniker": "Migrations\\20240418115235_DataBasev1-4.cs",
@@ -371,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "20240418114609_DataBasev1-3.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240418114609_DataBasev1-3.cs",
               "RelativeDocumentMoniker": "Migrations\\20240418114609_DataBasev1-3.cs",
@@ -383,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "20240418114156_DataBase1-2.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240418114156_DataBase1-2.cs",
               "RelativeDocumentMoniker": "Migrations\\20240418114156_DataBase1-2.cs",
@@ -395,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "20240418113948_DataBasev1-1.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240418113948_DataBasev1-1.cs",
               "RelativeDocumentMoniker": "Migrations\\20240418113948_DataBasev1-1.cs",
@@ -407,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "20240418113120_DataBasev1-0.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240418113120_DataBasev1-0.cs",
               "RelativeDocumentMoniker": "Migrations\\20240418113120_DataBasev1-0.cs",
@@ -419,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "20240410112051_test.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Migrations\\20240410112051_test.cs",
               "RelativeDocumentMoniker": "Migrations\\20240410112051_test.cs",
@@ -431,19 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IncomesController.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\IncomesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\IncomesController.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\IncomesController.cs",
-              "RelativeToolTip": "Controllers\\IncomesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:30:51.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "PermissionsController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\PermissionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PermissionsController.cs",
@@ -455,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "PaymentsController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\PaymentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",

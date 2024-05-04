@@ -41,9 +41,26 @@ namespace BudzetDomowy.Controllers
             return income;
         }
 
-        // PUT: api/Incomes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+        // GET: api/Incomes/Budget/{budgetId}
+        [HttpGet("Budget/{budgetId}")]
+        public async Task<ActionResult<IEnumerable<Income>>> GetIncomesByBudget(int budgetId)
+        {
+            var incomes = await _context.Incomes
+                .Where(i => i.BudgetId == budgetId)
+                .ToListAsync();
+
+            if (incomes == null)
+            {
+                return NotFound();
+            }
+
+            return incomes;
+        }
+    
+
+    // PUT: api/Incomes/5
+    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    [HttpPut("{id}")]
         public async Task<IActionResult> PutIncome(int id, Income income)
         {
             if (id != income.IncomeId)

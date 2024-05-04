@@ -68,10 +68,6 @@ namespace BudzetDomowy.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -106,10 +102,6 @@ namespace BudzetDomowy.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -155,10 +147,6 @@ namespace BudzetDomowy.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Supplier")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -217,7 +205,6 @@ namespace BudzetDomowy.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
                     b.Property<byte[]>("Image")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("Password")

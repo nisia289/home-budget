@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BudzetDomowy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5573649383b2f3245bfd88ac68fca4ee3d17cd73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40118fb514e6cd5117f25198f1d950e92bbb37fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("BudzetDomowy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BudzetDomowy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
