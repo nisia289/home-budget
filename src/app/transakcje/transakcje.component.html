@@ -1,2 +1,40 @@
 <app-nav-bar></app-nav-bar>
-<p>transakcje works!</p>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{budgetName}}</h1>
+      <h1>Zrealizowane transakcje</h1>
+
+      <div class="row">
+        <div class="col-12 mb-3" *ngFor="let group of groupedTransactions">
+          <h3>{{ group.date | date }}</h3>
+          <div *ngFor="let transaction of group.transactions">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h5 class="card-title" [ngClass]="{
+                      'income-color': transaction.source === 'incomes',
+                      'other-color': transaction.source === 'payments' || transaction.source === 'expenditures'
+                    }">Kwota: {{ transaction.amount }}</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Data: {{ transaction.date | date }}</p>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Kategoria: {{ transaction.category }}</p>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Opis: {{ transaction.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</div>

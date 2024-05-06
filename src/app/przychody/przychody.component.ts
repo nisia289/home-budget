@@ -14,24 +14,50 @@ export class PrzychodyComponent implements OnInit {
   budgetName: string = '';
   przychod: PrzychodModel = new PrzychodModel();
   incomes: any[] = [];
+  groupedIncomes: { date: string, incomes: any[] }[] = [];
+
 
   ngOnInit(): void {
+   this.getIncomes();
+  }
+
+  onSubmit() {
+    this.przychodyService.addIncome(
+      this.przychod.incomeId,
+      this.przychod.amount,
+      this.przychod.date,
+      this.przychod.category,
+      this.przychod.description,
+      this.budgetService.newBudgetId,
+      this.userService.userID
+    ).subscribe(
+      (response: any) => {
+        console.log('Dodano nowy przychód:', response);
+        this.getIncomes();
+      },
+      (error: any) => {
+        console.error('Błąd podczas dodawania przychodu:', error);
+      }
+    );
+  }
+
+  getIncomes() {
     this.budgetService.getBudgetName(this.userService.chosenBudgetID).subscribe(name => {
       this.budgetName = name;
     });
     this.przychodyService.getIncomes(this.budgetService.newBudgetId).subscribe((data: any[]) => {
-      this.incomes = data;
-    });
-  }
+      const grouped = data.reduce((acc, income) => {
+        const date = income.date.split('T')[0];
+        if (!acc[date]) {
+          acc[date] = [];
+        }
+        acc[date].push(income);
+        return acc;
+      }, {});
 
-  onSubmit() {
-    this.przychodyService.addIncome(this.przychod.incomeId, this.przychod.amount, this.przychod.date, this.przychod.category, this.przychod.description,this.budgetService.newBudgetId, this.userService.userID).subscribe((response: any) => {
-      console.log('Dodano nowy przychód:', response);
-      // Możesz dodać dalsze akcje po dodaniu przychodu, np. wyczyszczenie formularza
-
-    }, (error: any) => {
-      console.error('Błąd podczas dodawania przychodu:', error);
-      // Możesz obsłużyć błąd, np. wyświetlając odpowiedni komunikat dla użytkownika
+      this.groupedIncomes = Object.keys(grouped)
+        .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
+        .map(date => ({ date, incomes: grouped[date] }));
     });
   }
 

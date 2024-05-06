@@ -1,2 +1,60 @@
 <app-nav-bar></app-nav-bar>
-<p>wydatki works!</p>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>{{budgetName}}</h1>
+      <h1>Wydatki</h1>
+
+      <div class="row">
+        <div class="col-12 mb-3" *ngFor="let group of groupedExpenditures">
+          <h3>{{ group.date | date }}</h3>
+          <div *ngFor="let expenditure of group.expenditures">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h5 class="card-title" style="color: red;">Kwota: {{ expenditure.amount }}</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Data: {{ expenditure.date | date }}</p>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Kategoria: {{ expenditure.category }}</p>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Opis: {{ expenditure.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="form-container p-3 bg-light rounded" style="position: fixed; top: 50px; right: 20px;">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="kwota">Kwota</label>
+            <input type="text" class="form-control" id="kwota" placeholder="Wpisz kwotę" [(ngModel)]="wydatek.amount" name="kwota">
+          </div>
+          <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" class="form-control" id="data" [(ngModel)]="wydatek.date" name="data">
+          </div>
+          <div class="form-group">
+            <label for="kategoria">Kategoria</label>
+            <input type="text" class="form-control" id="kategoria" placeholder="Wpisz kategorię" [(ngModel)]="wydatek.category" name="kategoria">
+          </div>
+          <div class="form-group">
+            <label for="opis">Opis</label>
+            <textarea class="form-control" id="opis" rows="3" placeholder="Wpisz opis" [(ngModel)]="wydatek.description" name="opis"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Dodaj</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

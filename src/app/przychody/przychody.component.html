@@ -3,25 +3,28 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <h1>Budżet: {{budgetName}}</h1>
-      <h1>Lista przychodów:</h1>
+      <h1>{{budgetName}}</h1>
+      <h1>Przychody</h1>
 
       <div class="row">
-        <div class="col-12 mb-3" *ngFor="let income of incomes">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col">
-                  <h5 class="card-title">Kwota: {{ income.amount }}</h5>
-                </div>
-                <div class="col">
-                  <p class="card-text">Data: {{ income.date | date }}</p>
-                </div>
-                <div class="col">
-                  <p class="card-text">Kategoria: {{ income.category }}</p>
-                </div>
-                <div class="col">
-                  <p class="card-text">Opis: {{ income.description }}</p>
+        <div class="col-12 mb-3" *ngFor="let group of groupedIncomes">
+          <h3>{{ group.date | date }}</h3>
+          <div *ngFor="let income of group.incomes">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h5 class="card-title" style="color:green;">Kwota: {{ income.amount }}</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Data: {{ income.date | date }}</p>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Kategoria: {{ income.category }}</p>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Opis: {{ income.description }}</p>
+                  </div>
                 </div>
               </div>
             </div>
