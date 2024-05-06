@@ -41,6 +41,22 @@ namespace BudzetDomowy.Controllers
             return expenditure;
         }
 
+        // GET: api/Expenditures/Budget/{budgetId}
+        [HttpGet("Budget/{budgetId}")]
+        public async Task<ActionResult<IEnumerable<Expenditure>>> GetExpenditureByBudget(int budgetId)
+        {
+            var expenditures = await _context.Expenditures
+                .Where(i => i.BudgetId == budgetId)
+                .ToListAsync();
+
+            if (expenditures == null)
+            {
+                return NotFound();
+            }
+
+            return expenditures;
+        }
+
         // PUT: api/Expenditures/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

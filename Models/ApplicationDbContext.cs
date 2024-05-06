@@ -19,7 +19,7 @@ namespace BudzetDomowy.Models
         public DbSet<UserBudget> UserBudgets { get; set; }
 
         public DbSet<Role> Roles { get; set; }
-
+  
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<Income> Incomes { get; set; }
 

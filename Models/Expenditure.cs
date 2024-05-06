@@ -13,10 +13,5 @@ namespace BudzetDomowy.Models
 
         public int UserId { get; set; }  //foreign key
 
-        [JsonIgnore]
-        public Budget Budget { get; set; }
-
-        [JsonIgnore]
-        public User User { get; set; }
     }
 }

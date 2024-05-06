@@ -41,6 +41,22 @@ namespace BudzetDomowy.Controllers
             return payment;
         }
 
+        // GET: api/Payments/Budget/{budgetId}
+        [HttpGet("Budget/{budgetId}")]
+        public async Task<ActionResult<IEnumerable<Payment>>> GetPaymentsByBudget(int budgetId)
+        {
+            var payments = await _context.Payments
+                .Where(i => i.BudgetId == budgetId)
+                .ToListAsync();
+
+            if (payments == null)
+            {
+                return NotFound();
+            }
+
+            return payments;
+        }
+
         // PUT: api/Payments/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -99,9 +115,27 @@ namespace BudzetDomowy.Controllers
             return NoContent();
         }
 
+        // GET: api/Payments/Budget/{budgetId}/completed
+        [HttpGet("Budget/{budgetId}/completed")]
+        public async Task<ActionResult<IEnumerable<Payment>>> GetPaymentsCompletedPayments(int budgetId)
+        {
+            var payments = await _context.Payments
+                .Where(i => i.BudgetId == budgetId && i.Status == "completed")
+                .ToListAsync();
+
+            if (payments == null)
+            {
+                return NotFound();
+            }
+
+            return payments;
+        }
+
+
         private bool PaymentExists(int id)
         {
             return _context.Payments.Any(e => e.PaymentId == id);
         }
+  
     }
 }

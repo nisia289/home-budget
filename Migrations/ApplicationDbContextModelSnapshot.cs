@@ -75,8 +75,6 @@ namespace BudzetDomowy.Migrations
 
                     b.HasIndex("BudgetId");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Expenditures");
                 });
 
@@ -111,8 +109,6 @@ namespace BudzetDomowy.Migrations
                     b.HasKey("IncomeId");
 
                     b.HasIndex("BudgetId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Incomes");
                 });
@@ -156,8 +152,6 @@ namespace BudzetDomowy.Migrations
                     b.HasKey("PaymentId");
 
                     b.HasIndex("BudgetId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Payments");
                 });
@@ -255,59 +249,29 @@ namespace BudzetDomowy.Migrations
 
             modelBuilder.Entity("BudzetDomowy.Models.Expenditure", b =>
                 {
-                    b.HasOne("BudzetDomowy.Models.Budget", "Budget")
+                    b.HasOne("BudzetDomowy.Models.Budget", null)
                         .WithMany("Expenditures")
                         .HasForeignKey("BudgetId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("BudzetDomowy.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Budget");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BudzetDomowy.Models.Income", b =>
                 {
-                    b.HasOne("BudzetDomowy.Models.Budget", "Budget")
+                    b.HasOne("BudzetDomowy.Models.Budget", null)
                         .WithMany("Incomes")
                         .HasForeignKey("BudgetId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("BudzetDomowy.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Budget");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BudzetDomowy.Models.Payment", b =>
                 {
-                    b.HasOne("BudzetDomowy.Models.Budget", "Budget")
+                    b.HasOne("BudzetDomowy.Models.Budget", null)
                         .WithMany("Payments")
                         .HasForeignKey("BudgetId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("BudzetDomowy.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Budget");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BudzetDomowy.Models.UserBudget", b =>
