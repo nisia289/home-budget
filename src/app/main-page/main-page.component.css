@@ -165,6 +165,31 @@ h2:after {
   }
 }
 
+.income {
+  color: #32CD32
+}
+
+.expenditure {
+  color: red;
+}
+
+.icons-left {
+
+}
+
+.icons-left:hover{
+  cursor: pointer;
+}
+
+.icons-right {
+}
+
+.icons-right:hover {
+  cursor: pointer;
+}
+
+
+
 
 
 

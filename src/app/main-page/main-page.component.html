@@ -1,31 +1,31 @@
 <div class = "container-fluid">
   <app-nav-bar></app-nav-bar>
   <div class="hello">
-    <h2 data-text="Dzień Dobry Maciej">Dzień Dobry {{username}}</h2>
+  <h2 data-text="Dzień Dobry Maciej"> Dzień Dobry {{username}}</h2>
   </div>
+  <div style="color: green; font-size: x-large;">Łączny przychód: {{summary.totalIncome}}</div>
+  <div style="color: red; font-size: x-large;">Łączne wydatki: {{summary.totalExpenditure}}</div>
 
   <div class="monthText">
     <h3>{{this.month.toUpperCase()}}</h3>
    </div>
    <div class="container">
-    <div class="row">
-      <div class ="square" (click)="goToTest()" *ngFor="let day of [1,2,3,4,5,6,7]"> {{day}} </div>
+    <div class="row" *ngFor="let week of [[1,2,3,4,5,6,7], [8,9,10,11,12,13,14], [15,16,17,18,19,20,21], [22,23,24,25,26,27,28], generateLastRow()]">
+      <div class="square" *ngFor="let day of week">
+        <div (click)="goToTest()">
+         {{day}}
+         <div *ngIf="getSummaryForDay(day).totalIncome > 0" class="income">
+          {{ getSummaryForDay(day).totalIncome }}
+        </div>
+        <div *ngIf="getSummaryForDay(day).totalExpenditure > 0" class="expenditure">
+          {{ getSummaryForDay(day).totalExpenditure }}
+        </div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class ="square" *ngFor="let day of [8,9,10,11,12,13,14]"> {{day}} </div>
-    </div>
-    <div class="row">
-      <div class ="square" *ngFor="let day of [15,16,17,18,19,20,21]"> {{day}} </div>
-    </div>
-    <div class="row">
-      <div class ="square" *ngFor="let day of [22,23,24,25,26,27,28]"> {{day}} </div>
-    </div>
-    <div class="row">
-      <div class ="square" *ngFor="let day of generateLastRow()"> {{day}} </div>
-    </div>
-
-
   </div>
+
+
 
   </div>
 

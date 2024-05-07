@@ -14,7 +14,8 @@ export class PrzychodyComponent implements OnInit {
   budgetName: string = '';
   przychod: PrzychodModel = new PrzychodModel();
   incomes: any[] = [];
-  groupedIncomes: { date: string, incomes: any[] }[] = [];
+  groupedIncomes: any[] = [];
+
 
 
   ngOnInit(): void {
@@ -45,19 +46,25 @@ export class PrzychodyComponent implements OnInit {
     this.budgetService.getBudgetName(this.userService.chosenBudgetID).subscribe(name => {
       this.budgetName = name;
     });
+
     this.przychodyService.getIncomes(this.budgetService.newBudgetId).subscribe((data: any[]) => {
       const grouped = data.reduce((acc, income) => {
         const date = income.date.split('T')[0];
         if (!acc[date]) {
-          acc[date] = [];
+          acc[date] = { incomes: [], total: 0 }; // Explicitly add total here
         }
-        acc[date].push(income);
+        acc[date].incomes.push(income);
+        acc[date].total += income.amount;  // Assume amount is a number and add to total
         return acc;
       }, {});
 
       this.groupedIncomes = Object.keys(grouped)
         .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
-        .map(date => ({ date, incomes: grouped[date] }));
+        .map(date => ({
+          date: date,
+          incomes: grouped[date].incomes,
+          total: grouped[date].total  // Now TypeScript knows total exists
+        }));
     });
   }
 

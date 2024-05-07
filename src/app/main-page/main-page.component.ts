@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router';
 import { CrudTestService } from '../shared/crud-test.service';
+import { TransakcjeService } from '../shared/transakcje.service';
+import { DailySummariesModel } from '../shared/daily-summaries.model';
+import { BudgetService } from '../shared/budget.service';
+import { SummaryModel } from '../shared/summary.model';
 
 
 @Component({
@@ -12,7 +16,9 @@ import { CrudTestService } from '../shared/crud-test.service';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor(private router: Router, public service: CrudTestService) {}
+  constructor(private router: Router, public service: CrudTestService, private transakcjeService: TransakcjeService,
+    private budgetService: BudgetService) {}
+
 
   przychodyClicked = false;
   wydatkiClicked = false;
@@ -29,10 +35,14 @@ export class MainPageComponent implements OnInit {
   month: string = this.currentDate.toLocaleString('default', {month: 'long'});
   username: string = this.service.loggedInUsername;
   userId: number = 0;
+  dailySummaries: DailySummariesModel[] = [];
+  summary: SummaryModel = new SummaryModel;
 
 
   ngOnInit(): void {
     this.fetchUserId(this.username);
+    this.getMonthlyData();
+    this.getSummary();
     console.log(this.userId);
   }
 
@@ -109,6 +119,40 @@ export class MainPageComponent implements OnInit {
       }
     });
   }
+
+  getMonthlyData() {
+    this.transakcjeService.getMonthlyData(this.currentYear, this.currentMonthNumber, this.budgetService.newBudgetId).subscribe({
+      next: (data) => {
+        this.dailySummaries = data;
+        console.log(this.dailySummaries);
+      },
+      error: (error) => {
+        console.error('Error fetching monthly data:', error);
+      }
+    });
+  }
+
+  getSummaryForDay(dayNumber: number) {
+    const dateString = new Date(this.currentYear, this.currentMonthNumber - 1, dayNumber).toISOString().slice(0, 10);
+    const summary = this.dailySummaries.find(s => s.day.startsWith(dateString));
+    return summary || { day: dayNumber, totalIncome: 0, totalExpenditure: 0 };
+  }
+
+  getSummary() {
+    this.transakcjeService.getMonthlySummary(this.currentYear,this.currentMonthNumber, this.budgetService.newBudgetId).subscribe({
+      next: (data) => {
+        this.summary = data;
+        console.log('Financial Summary:', this.summary);
+      },
+      error: (error) => {
+        console.error('Error fetching financial summary:', error);
+      }
+    });
+  }
+
+
+
+
 
 
 

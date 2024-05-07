@@ -8,7 +8,8 @@
 
       <div class="row">
         <div class="col-12 mb-3" *ngFor="let group of groupedExpenditures">
-          <h3>{{ group.date | date }}</h3>
+          <h2>{{ group.date | date }}</h2>
+          <h3> Suma wydatków {{ group.total }}</h3>
           <div *ngFor="let expenditure of group.expenditures">
             <div class="card">
               <div class="card-body">
