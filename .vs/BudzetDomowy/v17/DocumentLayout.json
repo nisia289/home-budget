@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\semestr vi\\dotnet\\projekt\\backend_moj\\budzetdomowy\\migrations\\20240506122911_databasev2-0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -154,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -166,8 +166,7 @@
               "RelativeToolTip": "Migrations\\20240506122911_DataBasev2-0.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T12:29:11.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T12:29:11.803Z"
             },
             {
               "$type": "Document",
@@ -183,29 +182,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "IncomesController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\IncomesController.cs",
               "RelativeDocumentMoniker": "Controllers\\IncomesController.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\IncomesController.cs",
               "RelativeToolTip": "Controllers\\IncomesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAuwKQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T14:30:51.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PaymentsController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\PaymentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Controllers\\PaymentsController.cs",
               "RelativeToolTip": "Controllers\\PaymentsController.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAuwHsAAAAfAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAuwHsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:30:18.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T14:30:18.042Z"
             },
             {
               "$type": "Document",
@@ -221,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "Models\\Payment.cs",
@@ -229,12 +227,11 @@
               "RelativeToolTip": "Models\\Payment.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAA6wAkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:36:26.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T13:36:26.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Income.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\Models\\Income.cs",
               "RelativeDocumentMoniker": "Models\\Income.cs",
@@ -242,8 +239,7 @@
               "RelativeToolTip": "Models\\Income.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAywA0AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:36:58.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T13:36:58.924Z"
             },
             {
               "$type": "Document",

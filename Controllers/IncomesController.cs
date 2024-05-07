@@ -116,6 +116,64 @@ namespace BudzetDomowy.Controllers
             return NoContent();
         }
 
+        [HttpGet("daily-summaries/{year}/{month}/{budgetId}")]
+        public async Task<IActionResult> GetDailySummaries(int year, int month, int budgetId)
+        {
+            var incomes = await _context.Incomes
+         .Where(i => i.Date.Year == year && i.Date.Month == month && i.BudgetId == budgetId)
+         .GroupBy(i => i.Date.Date)
+         .Select(g => new
+         {
+             Day = g.Key,
+             TotalIncome = g.Sum(i => i.Amount),
+             TotalExpenditure = 0M  // Wartość domyślna dla wydatków
+         })
+         .ToListAsync();
+
+            var expenditures = await _context.Expenditures
+                .Where(e => e.Date.Year == year && e.Date.Month == month && e.BudgetId == budgetId)
+                .GroupBy(e => e.Date.Date)
+                .Select(g => new
+                {
+                    Day = g.Key,
+                    TotalIncome = 0M,  // Wartość domyślna dla przychodów
+                    TotalExpenditure = g.Sum(e => e.Amount)
+                })
+                .ToListAsync();
+
+            var results = incomes.Concat(expenditures)
+                .GroupBy(x => x.Day)
+                .Select(g => new
+                {
+                    Day = g.Key,
+                    TotalIncome = g.Sum(x => x.TotalIncome),
+                    TotalExpenditure = g.Sum(x => x.TotalExpenditure)
+                })
+                .OrderBy(x => x.Day)
+                .ToList();
+
+
+            return Ok(results);
+        }
+
+        [HttpGet("summary/{year}/{month}/{budgetId}")]
+        public async Task<IActionResult> GetMonthlySummary(int year, int month, int budgetId)
+        {
+            var totalIncome = await _context.Incomes
+                .Where(i => i.Date.Year == year && i.Date.Month == month && i.BudgetId == budgetId)
+                .SumAsync(i => i.Amount);
+
+            var totalExpenditure = await _context.Expenditures
+                .Where(e => e.Date.Year == year && e.Date.Month == month && e.BudgetId == budgetId)
+                .SumAsync(e => e.Amount);
+
+            return Ok(new
+            {
+                TotalIncome = totalIncome,
+                TotalExpenditure = totalExpenditure
+            });
+        }
+
         private bool IncomeExists(int id)
         {
             return _context.Incomes.Any(e => e.IncomeId == id);
