@@ -1,13 +1,17 @@
 ID: {{budgetService.clickedBudget.budgetId}}
 NAME: {{budgetService.clickedBudget.name}}
 DESCRIPTION: {{budgetService.clickedBudget.description}}
-<h1>Dodaj członka budżetu domowego</h1>
-<form>
-  <div>
-    <label for="username">Nazwa użytkownika:</label>
-    <input type="text" id="username" [(ngModel)]="foundUsername" name="username">
-  </div>
+  <body>
+    <div class="container">
+      <h1>Dodaj członka budżetu domowego</h1>
+      <form>
+        <div>
+      <label for="username">Nazwa użytkownika:</label>
+      <input type="text" id="username" [(ngModel)]="foundUsername" name="username">
+    </div>
   <button type="submit" (click)="submitForm()">Zatwierdź</button>
   <button type="submit" (click)="selectBudget()">Wybierz budżet</button>
 
-</form>
+      </form>
+  </div>
+</body>

@@ -25,3 +25,26 @@
 </div>
 
 </div>
+
+
+
+<div class="container-list">
+  <p>Wyświetl budżety użytkowników</p>
+
+  <form th:action="@{/exams}" method="get" id="main-form">
+    <div class="search-form">
+      <input type="search" name="searchQuery" placeholder="Szukaj użytkownika..." th:value="${param.searchQuery}" />
+      <button type="submit" class="search-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="sortType-filter-form">
+      <select id="sortType" name="sortType" aria-placeholder="Select sorting" th:value="${param.sortType}">
+        <option class="defaultOption" value="" selected>Default</option>
+        <option>Wszyscy</option>
+        <option>UzytkownikA</option>
+        <option>UzytkownikB</option>
+        <option>itd.</option>
+      </select>
+      <i class="fa-solid fa-filter"></i>
+    </div>
+  </form>
