@@ -5,7 +5,13 @@
     <div class="col-md-8">
       <h1>{{budgetName}}</h1>
       <h1>Przychody</h1>
-
+      <div>
+        <label for="dropdown"></label>
+        <select id="dropdown"[(ngModel)]="selectedUserId" (change)="onSelect(selectedUserId)">
+          <option [value] = "0">wszyscy</option>
+          <option *ngFor="let user of users" [value]="user.userId">{{ user.username }}</option>
+        </select>
+      </div>
       <div class="row">
         <div class="col-12 mb-3" *ngFor="let group of groupedIncomes">
           <h2>{{ group.date | date }}</h2>

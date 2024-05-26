@@ -11,6 +11,7 @@ export class PrzychodyService {
 
   urlToGet: string = 'https://localhost:7216/api/Incomes/Budget/';
   urlToAdd: string = 'https://localhost:7216/api/Incomes';
+  urlToGetByUserId: string = 'https://localhost:7216/api/Incomes/user';
 
   addIncome(incomeId: number, amount: number, date: Date, category: string, description: string,budgetId: number, userId: number): Observable<any> {
     const income = {
@@ -29,5 +30,11 @@ export class PrzychodyService {
 
   getIncomes(budgetId: number): Observable<any[]> {
     return this.http.get<any[]>(`${this.urlToGet}${budgetId}`);
+  }
+
+  getSpecificUserIncomes(userId: number, budgetId: number): Observable<any[]> {
+    console.log(`${this.urlToGetByUserId}/${userId}/budget/${budgetId}`);
+    return this.http.get<any[]>(`${this.urlToGetByUserId}/${userId}/budget/${budgetId}`);
+
   }
 }

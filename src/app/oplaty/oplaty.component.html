@@ -5,7 +5,13 @@
     <div class="col-md-8">
       <h1>{{budgetName}}</h1>
       <h1>Opłaty</h1>
-
+      <div>
+        <label for="dropdown"></label>
+        <select id="dropdown"[(ngModel)]="selectedUserId" (change)="onSelect(selectedUserId)">
+          <option [value] = "0">wszyscy</option>
+          <option *ngFor="let user of users" [value]="user.userId">{{ user.username }}</option>
+        </select>
+      </div>
       <div class="row">
         <div class="col-12 mb-3" *ngFor="let group of groupedPayments">
           <h3>{{ group.date | date }}</h3>
@@ -27,6 +33,9 @@
                   </div>
                   <div class="col">
                     <p class="card-text">Dostawca: {{ payment.supplier }}</p>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn btn-success">Zrealizuj</button>
                   </div>
                 </div>
               </div>

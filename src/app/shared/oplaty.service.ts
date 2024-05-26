@@ -11,6 +11,7 @@ export class OplatyService {
 
   urlToGet: string = 'https://localhost:7216/api/Payments/Budget/';
   urlToAdd: string = 'https://localhost:7216/api/Payments';
+  urlToGetByUserId = 'https://localhost:7216/api/Payments/user';
 
   addPayments(paymentId: number, amount: number, date: Date, category: string, description: string, supplier: string, status: string, budgetId: number, userId: number): Observable<any> {
     const payment = {
@@ -31,5 +32,10 @@ export class OplatyService {
 
   getPayments(budgetId: number): Observable<any[]> {
     return this.http.get<any[]>(`${this.urlToGet}${budgetId}`);
+  }
+
+  getSpecificUserPayments(userId: number, budgetId: number): Observable<any[]> {
+    console.log(`${this.urlToGetByUserId}/${userId}/budget/${budgetId}`);
+    return this.http.get<any[]>(`${this.urlToGetByUserId}/${userId}/budget/${budgetId}`);
   }
 }
