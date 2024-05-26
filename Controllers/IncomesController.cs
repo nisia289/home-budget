@@ -174,6 +174,21 @@ namespace BudzetDomowy.Controllers
             });
         }
 
+        [HttpGet("user/{userId}/budget/{budgetId}")]
+        public async Task<ActionResult<IEnumerable<Income>>> GetIncomesByUserAndBudget(int userId, int budgetId)
+        {
+            var incomes = await _context.Incomes
+                .Where(p => p.UserId == userId && p.BudgetId == budgetId)
+                .ToListAsync();
+
+            if (incomes == null || !incomes.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(incomes);
+        }
+
         private bool IncomeExists(int id)
         {
             return _context.Incomes.Any(e => e.IncomeId == id);

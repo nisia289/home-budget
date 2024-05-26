@@ -64,6 +64,28 @@ namespace BudzetDomowy.Controllers
             return Ok(budgets);
         }
 
+        [HttpGet("{budgetId}/users")]
+        public async Task<ActionResult<IEnumerable<User>>> GetUsersByBudget(int budgetId)
+        {
+            // Pobierz UserId z UserBudget gdzie BudgetId jest równy podanemu budgetId
+            var userIds = await _context.UserBudgets
+                .Where(ub => ub.BudgetId == budgetId)
+                .Select(ub => ub.UserId)
+                .ToListAsync();
+
+            if (userIds == null || !userIds.Any())
+            {
+                return NotFound();
+            }
+
+            // Pobierz użytkowników z tabeli User dla pobranych userIds
+            var users = await _context.Users
+                .Where(u => userIds.Contains(u.UserId))
+                .ToListAsync();
+
+            return Ok(users);
+        }
+
 
 
         // PUT: api/UserBudgets/5

@@ -57,6 +57,21 @@ namespace BudzetDomowy.Controllers
             return payments;
         }
 
+        [HttpGet("user/{userId}/budget/{budgetId}")]
+        public async Task<ActionResult<IEnumerable<Payment>>> GetPaymentsByUserAndBudget(int userId, int budgetId)
+        {
+            var payments = await _context.Payments
+                .Where(p => p.UserId == userId && p.BudgetId == budgetId)
+                .ToListAsync();
+
+            if (payments == null || !payments.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(payments);
+        }
+
         // PUT: api/Payments/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -129,6 +144,33 @@ namespace BudzetDomowy.Controllers
             }
 
             return payments;
+        }
+
+
+        [HttpDelete("move/{id}")]
+        public async Task<IActionResult> DeleteAndMovePayment(int id)
+        {
+            var payment = await _context.Payments.FindAsync(id);
+            if (payment == null)
+            {
+                return NotFound();
+            }
+
+            var expenditure = new Expenditure
+            {
+                Amount = payment.Amount,
+                Date = payment.Date,
+                Category = payment.Category,
+                Description = payment.Description,
+                BudgetId = payment.BudgetId,
+                UserId = payment.UserId
+            };
+
+            await _context.Expenditures.AddAsync(expenditure);
+            _context.Payments.Remove(payment);
+            await _context.SaveChangesAsync();
+
+            return Ok(expenditure);
         }
 
 

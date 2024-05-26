@@ -18,6 +18,5 @@ namespace BudzetDomowy.Models
         
         public ICollection<Payment> Payments { get; set; }
 
-
     }
 }
