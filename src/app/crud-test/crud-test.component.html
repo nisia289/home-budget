@@ -7,17 +7,16 @@
   </li>
 </ul>
 
-<h1>Dodaj Usera</h1>
+<h1>Dodaj Użytkownika</h1>
 
 <form>
   <input type="text" [(ngModel)]="service.formData.username" name="username" placeholder="Username">
   <input type="password" [(ngModel)]="service.formData.password" name="password" placeholder="Password">
   <!--<button type="submit" (click)="onSubmit()">Dodaj do bazy danych</button>-->
-  <!-- Możesz dodać więcej pól związanych z model.userBudgets itp. -->
 </form>
 
-<h1>Usun usera</h1>
+<h1>Usuń użytkownika</h1>
 <form>
   <input type="text" [(ngModel)]="this.idToDelete" name="idToDelete" placeholder="idToDelete">
-<button type="submit"(click)="deleteUser(idToDelete)">Usun usera</button>
+<button type="submit"(click)="deleteUser(idToDelete)">Usuń użytkownika</button>
 </form>
