@@ -6,25 +6,25 @@
           <div class="card-body p-5 text-center">
 
             <form (ngSubmit)="onLogin()" class="mb-md-5 mt-md-4 pb-5">
-              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-              <p class="text-white-50 mb-5">Please enter your login and password!</p>
+              <h2 class="fw-bold mb-2 text-uppercase">Zaloguj się</h2>
+              <p class="text-white-50 mb-5">Wprowadź login i hasło</p>
 
               <div class="form-outline form-white mb-4">
                 <input type="name" id="typeNameX" class="form-control form-control-lg" [(ngModel)]="username" name="username"/>
-                <label class="form-label" for="typeNameX">Name</label>
+                <label class="form-label" for="typeNameX">Login</label>
               </div>
 
               <div class="form-outline form-white mb-4">
                 <input type="password" id="typePasswordX" class="form-control form-control-lg" [(ngModel)]="password" name="password" />
-                <label class="form-label" for="typePasswordX">Password</label>
+                <label class="form-label" for="typePasswordX">Hasło</label>
               </div>
 
-              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              <button class="btn btn-outline-light btn-lg px-5" type="submit">Zaloguj</button>
 
               <div>
                 <br />
                 <p class="mb-0">
-                  Don't have an account? <button type="submit" class="goToSubmitButton" (click)="navigateToSignUp()">Sign up</button>
+                  Nie masz konta? <button type="submit" class="goToSubmitButton" (click)="navigateToSignUp()">Zarejestruj się</button>
                 </p>
               </div>
 
