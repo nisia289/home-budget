@@ -7,8 +7,8 @@
       <h1>Wydatki</h1>
       <div>
         <label for="dropdown"></label>
-        <select id="dropdown"[(ngModel)]="selectedUserId" (change)="onSelect(selectedUserId)">
-          <option [value] = "0">wszyscy</option>
+        <select id="dropdown" [(ngModel)]="selectedUserId" (change)="onSelect(selectedUserId)">
+          <option [value]="0">wszyscy</option>
           <option *ngFor="let user of users" [value]="user.userId">{{ user.username }}</option>
         </select>
       </div>
@@ -65,3 +65,4 @@
     </div>
   </div>
 </div>
+
