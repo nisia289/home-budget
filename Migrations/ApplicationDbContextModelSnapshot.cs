@@ -68,6 +68,10 @@ namespace BudzetDomowy.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Supplier")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -138,10 +142,6 @@ namespace BudzetDomowy.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Supplier")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -154,40 +154,6 @@ namespace BudzetDomowy.Migrations
                     b.HasIndex("BudgetId");
 
                     b.ToTable("Payments");
-                });
-
-            modelBuilder.Entity("BudzetDomowy.Models.Permission", b =>
-                {
-                    b.Property<int>("PermissionId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PermissionId"));
-
-                    b.Property<string>("PermissionName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("PermissionId");
-
-                    b.ToTable("Permissions");
-                });
-
-            modelBuilder.Entity("BudzetDomowy.Models.Role", b =>
-                {
-                    b.Property<int>("RoleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"));
-
-                    b.Property<string>("RoleName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("RoleId");
-
-                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("BudzetDomowy.Models.User", b =>
@@ -225,10 +191,7 @@ namespace BudzetDomowy.Migrations
                     b.Property<int>("BudgetId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PermissionId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("RoleId")
+                    b.Property<int>("RoleId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
@@ -237,10 +200,6 @@ namespace BudzetDomowy.Migrations
                     b.HasKey("UserBudgetId");
 
                     b.HasIndex("BudgetId");
-
-                    b.HasIndex("PermissionId");
-
-                    b.HasIndex("RoleId");
 
                     b.HasIndex("UserId");
 
@@ -282,14 +241,6 @@ namespace BudzetDomowy.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BudzetDomowy.Models.Permission", null)
-                        .WithMany("UserBudgets")
-                        .HasForeignKey("PermissionId");
-
-                    b.HasOne("BudzetDomowy.Models.Role", null)
-                        .WithMany("UserBudgets")
-                        .HasForeignKey("RoleId");
-
                     b.HasOne("BudzetDomowy.Models.User", null)
                         .WithMany("UserBudgets")
                         .HasForeignKey("UserId")
@@ -305,16 +256,6 @@ namespace BudzetDomowy.Migrations
 
                     b.Navigation("Payments");
 
-                    b.Navigation("UserBudgets");
-                });
-
-            modelBuilder.Entity("BudzetDomowy.Models.Permission", b =>
-                {
-                    b.Navigation("UserBudgets");
-                });
-
-            modelBuilder.Entity("BudzetDomowy.Models.Role", b =>
-                {
                     b.Navigation("UserBudgets");
                 });
 

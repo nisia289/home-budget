@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BudzetDomowy.Models;
-using Microsoft.AspNetCore.Identity;//dodalam
+using Microsoft.AspNetCore.Identity;
 
 namespace BudzetDomowy.Controllers
 {
@@ -91,10 +91,10 @@ namespace BudzetDomowy.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            // Utwórz instancję hashera
+            
             var hasher = new PasswordHasher<User>();
 
-            // Hashuj hasło przed dodaniem użytkownika
+            
             user.Password = hasher.HashPassword(user, user.Password);
 
             _context.Users.Add(user);
@@ -107,7 +107,7 @@ namespace BudzetDomowy.Controllers
         public IActionResult CheckUser([FromBody] User loginUser)
         {
             var user = _context.Users.FirstOrDefault(u => u.Username == loginUser.Username);
-            // Utwórz instancję hashera
+            
             var hasher = new PasswordHasher<User>();
 
             if (user != null && hasher.VerifyHashedPassword(user, user.Password, loginUser.Password) == PasswordVerificationResult.Success)
@@ -123,13 +123,10 @@ namespace BudzetDomowy.Controllers
         private bool VerifyPassword(string inputPassword, string storedPassword, string storedHashedPassword)
         {
 
-            // Utwórz instancję hashera
+            
             var hasher = new PasswordHasher<User>();
 
-            // Sprawdź hasło – idealnie użyj mechanizmu hashowania
-            //return inputPassword == storedPassword;
-
-            // Sprawdź, czy zahashowane hasło zgadza się z podanym hasłem
+            
             return hasher.VerifyHashedPassword(new User(), storedHashedPassword, inputPassword) == PasswordVerificationResult.Success;
         }
 
@@ -197,7 +194,7 @@ namespace BudzetDomowy.Controllers
                     return NotFound("User or photo not found.");
                 }
 
-                return File(user.Image, "image/jpeg"); // Assuming the image format is JPEG. Change if needed.
+                return File(user.Image, "image/jpeg"); 
             }
             catch (Exception ex)
             {

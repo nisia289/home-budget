@@ -8261,11 +8261,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\BudzetDomowy.csproj",
+      "projectUniqueName": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\BudzetDomowy.csproj",
       "projectName": "BudzetDomowy",
-      "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\BudzetDomowy.csproj",
+      "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\BudzetDomowy.csproj",
       "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\SEMESTR VI\\dotNET\\Projekt\\backend_moj\\BudzetDomowy\\obj\\",
+      "outputPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\macie\\AppData\\Roaming\\NuGet\\NuGet.Config",

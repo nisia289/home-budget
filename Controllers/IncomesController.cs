@@ -126,7 +126,7 @@ namespace BudzetDomowy.Controllers
          {
              Day = g.Key,
              TotalIncome = g.Sum(i => i.Amount),
-             TotalExpenditure = 0M  // Wartość domyślna dla wydatków
+             TotalExpenditure = 0M  
          })
          .ToListAsync();
 
@@ -136,7 +136,7 @@ namespace BudzetDomowy.Controllers
                 .Select(g => new
                 {
                     Day = g.Key,
-                    TotalIncome = 0M,  // Wartość domyślna dla przychodów
+                    TotalIncome = 0M,  
                     TotalExpenditure = g.Sum(e => e.Amount)
                 })
                 .ToListAsync();

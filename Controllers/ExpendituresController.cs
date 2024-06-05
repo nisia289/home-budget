@@ -24,7 +24,15 @@ namespace BudzetDomowy.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Expenditure>>> GetExpenditures()
         {
-            return await _context.Expenditures.ToListAsync();
+            var expenditures = await _context.Expenditures.ToListAsync();
+
+            
+
+            if(expenditures == null )
+            {
+                return NotFound();
+            }
+            return Ok(expenditures);
         }
 
         // GET: api/Expenditures/5

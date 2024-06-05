@@ -130,22 +130,6 @@ namespace BudzetDomowy.Controllers
             return NoContent();
         }
 
-        // GET: api/Payments/Budget/{budgetId}/completed
-        [HttpGet("Budget/{budgetId}/completed")]
-        public async Task<ActionResult<IEnumerable<Payment>>> GetPaymentsCompletedPayments(int budgetId)
-        {
-            var payments = await _context.Payments
-                .Where(i => i.BudgetId == budgetId && i.Status == "completed")
-                .ToListAsync();
-
-            if (payments == null)
-            {
-                return NotFound();
-            }
-
-            return payments;
-        }
-
 
         [HttpDelete("move/{id}")]
         public async Task<IActionResult> DeleteAndMovePayment(int id)

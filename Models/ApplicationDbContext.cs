@@ -18,18 +18,17 @@ namespace BudzetDomowy.Models
 
         public DbSet<UserBudget> UserBudgets { get; set; }
 
-        public DbSet<Role> Roles { get; set; }
   
-        public DbSet<Permission> Permissions { get; set; }
+        
         public DbSet<Income> Incomes { get; set; }
 
         public DbSet<Expenditure> Expenditures { get; set; }
-        // a nie robic ich public virtual???
+        
         public DbSet<Payment> Payments { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {//connection string do bazy danych
+        {
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=BudgetDatabase;Trusted_Connection=True;");

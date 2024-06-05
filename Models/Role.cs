@@ -7,6 +7,6 @@ namespace BudzetDomowy.Models
         public int RoleId { get; set; } // primary key
         public string RoleName { get; set; }
         
-        public ICollection<UserBudget> UserBudgets { get; set; }
+        
     }
 }

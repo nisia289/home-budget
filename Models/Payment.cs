@@ -11,7 +11,6 @@ namespace BudzetDomowy.Models
         public string Description { get; set; }
 
         public string Supplier { get; set; } //dostawca
-        public string Status { get; set; }
         public int BudgetId { get; set; } // foreign key
 
         public int UserId { get; set; } //foreign key

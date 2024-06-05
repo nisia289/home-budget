@@ -21,5 +21,5 @@ public class User
     [JsonIgnore]
     public byte[]? Image { get; set; }
 
-    public ICollection<UserBudget> UserBudgets { get; set; }//wiele<->wielu
+    public ICollection<UserBudget> UserBudgets { get; set; }
 }

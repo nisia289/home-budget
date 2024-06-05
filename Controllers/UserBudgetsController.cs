@@ -67,7 +67,7 @@ namespace BudzetDomowy.Controllers
         [HttpGet("{budgetId}/users")]
         public async Task<ActionResult<IEnumerable<User>>> GetUsersByBudget(int budgetId)
         {
-            // Pobierz UserId z UserBudget gdzie BudgetId jest równy podanemu budgetId
+            
             var userIds = await _context.UserBudgets
                 .Where(ub => ub.BudgetId == budgetId)
                 .Select(ub => ub.UserId)
@@ -78,7 +78,7 @@ namespace BudzetDomowy.Controllers
                 return NotFound();
             }
 
-            // Pobierz użytkowników z tabeli User dla pobranych userIds
+            
             var users = await _context.Users
                 .Where(u => userIds.Contains(u.UserId))
                 .ToListAsync();
@@ -134,7 +134,6 @@ namespace BudzetDomowy.Controllers
                 UserId = userBudget.UserId,
                 BudgetId = userBudget.BudgetId,
                 RoleId = userBudget.RoleId,
-                PermissionId = userBudget.PermissionId
             };
 
             _context.UserBudgets.Add(userbudget);
@@ -143,11 +142,35 @@ namespace BudzetDomowy.Controllers
             return CreatedAtAction("GetUserBudget", new { id = userbudget.UserBudgetId }, userbudget);
         }
 
+        [HttpGet("/UserBudget/RoleId")]
+        public IActionResult GetUserBudgetRoleId(int budgetId, int userId)
+        {
+            try
+            {
+                // Wyszukaj rekord na podstawie podanego BudgetId i UserId
+                var userBudget = _context.UserBudgets.FirstOrDefault(ub => ub.BudgetId == budgetId && ub.UserId == userId);
+
+                // Sprawdź czy rekord istnieje
+                if (userBudget == null)
+                {
+                    return NotFound(); 
+                }
+
+                // Zwróć RoleId rekordu UserBudget
+                return Ok(userBudget.RoleId);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Wystąpił błąd: {ex.Message}"); 
+            }
+        }
 
 
 
-        // DELETE: api/UserBudgets/5
-        [HttpDelete("{id}")]
+
+
+            // DELETE: api/UserBudgets/5
+            [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUserBudget(int id)
         {
             var userBudget = await _context.UserBudgets.FindAsync(id);
