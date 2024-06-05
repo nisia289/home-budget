@@ -15,14 +15,24 @@ export class BudgetDetailsComponent implements OnInit {
 
   foundUsername: string = '';
   foundUserID: number = 0;
+  switcher: boolean = false;
+  roleId: number = 0;
 
   ngOnInit(): void {
       console.log(this.budgetService.newBudgetId);
       console.log(this.budgetService.getSingleBudget(this.budgetService.newBudgetId));
+      this.getUserRoleId();
+
+      this.userBudgetService.roleId$.subscribe(roleId => {
+        if(roleId !== null) {
+          console.log("Rola", roleId);
+          this.roleId = roleId;
+        }
+      });
   }
 
   submitForm(): void {
-    this.fetchUserId();
+    this.switcher = true;
   }
 
   fetchUserId(): void {
@@ -31,6 +41,7 @@ export class BudgetDetailsComponent implements OnInit {
         this.foundUserID = id;
         console.log('User ID:', this.foundUserID);
         this.AddBudgetToInvitedUser();
+        this.getUserRoleId();
       },
       error: (err) => {
         console.error('Error fetching user ID:', err);
@@ -39,10 +50,11 @@ export class BudgetDetailsComponent implements OnInit {
   }
 
   AddBudgetToInvitedUser() {
-    this.userBudgetService.postUserBudget(this.budgetService.clickedBudget.budgetId, this.foundUserID).subscribe({
+    this.switcher = true;
+    this.userBudgetService.postUserBudget(this.budgetService.clickedBudget.budgetId, this.foundUserID, this.roleId).subscribe({
       next: (res) => {
         console.log('Post User Budget Success:', res);
-        // Po pomyślnym wykonaniu operacji przejdź do strony głównej
+     //    Po pomyślnym wykonaniu operacji przejdź do strony głównej
       },
       error: (err) => {
         console.error('Error during the budget creation process:', err);
@@ -54,6 +66,27 @@ export class BudgetDetailsComponent implements OnInit {
 
   selectBudget() {
     this.userService.setChosenBudgetID(this.budgetService.clickedBudget.budgetId);
+    this.getUserRoleId();
+    this.router.navigate(['/konto']);
+  }
+
+  selectRole(id: number) {
+    this.roleId = id;
+    this.fetchUserId();
+    this.router.navigate(['/konto']);
+  }
+
+  getUserRoleId() {
+    this.userBudgetService.getRoleId(this.budgetService.clickedBudget.budgetId, this.userService.userID).subscribe({
+      next: (roleId: number) => {
+        console.log('Role ID:', roleId);
+        this.userBudgetService.setRoleId(roleId);
+
+      },
+      error: (error) => {
+        console.error('Error:', error);
+      }
+    });
   }
 
 

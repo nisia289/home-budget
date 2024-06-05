@@ -12,7 +12,7 @@ body {
 
 .container {
   background: white;
-  width: 300px;
+  width: 50%;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
@@ -48,4 +48,32 @@ button {
 
   button:hover {
     background-color: #3a66db;
+  }
+
+  .role {
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .role:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .role-name {
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin-left: 2%;
+  }
+
+  .role-description {
+    margin-left: 5.5%;
   }

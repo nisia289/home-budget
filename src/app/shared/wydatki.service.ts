@@ -13,13 +13,14 @@ export class WydatkiService {
   urlToAdd: string = 'https://localhost:7216/api/Expenditures';
   urlToGetByUserId: string = 'https://localhost:7216/api/Expenditures/user';
 
-  addExpenditure(expenditureId: number, amount: number, date: Date, category: string, description: string,budgetId: number, userId: number): Observable<any> {
+  addExpenditure(expenditureId: number, amount: number, date: Date, category: string, description: string, supplier: string, budgetId: number, userId: number): Observable<any> {
     const expenditure = {
       expenditureId: expenditureId,
       amount: amount,
       date: date,
       category: category,
       description: description,
+      supplier: supplier,
       budgetId: budgetId,
       userId: userId
     }

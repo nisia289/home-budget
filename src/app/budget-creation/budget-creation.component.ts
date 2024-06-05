@@ -18,9 +18,17 @@ export class BudgetCreationComponent implements OnInit {
   description: string = '';
   userId: number = this.userService.userID;
   budgetId: number = 0;
+  roleId = 0;
 
   ngOnInit(): void {
       console.log("Userrrrr ID:" + this.userId);
+
+      this.userBudgetService.roleId$.subscribe(roleId => {
+        if(roleId !== null) {
+          console.log("Rola", roleId);
+          this.roleId = roleId;
+        }
+      });
   }
 
   createBudget() {
@@ -37,7 +45,7 @@ export class BudgetCreationComponent implements OnInit {
       }),
       switchMap(() => {
         // Teraz wykonaj `postUserBudget` używając nowo uzyskanego `budgetId`
-        return this.userBudgetService.postUserBudget(this.budgetId, this.userId);
+        return this.userBudgetService.postUserBudget(this.budgetId, this.userId, 1);
       }),
       tap(res => console.log(res)) // Logowanie odpowiedzi z `postUserBudget`
     ).subscribe({

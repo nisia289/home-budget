@@ -19,11 +19,18 @@ export class PrzychodyComponent implements OnInit {
   groupedIncomes: any[] = [];
   users: CrudTest[] = [];
   selectedUserId: number = 0;
+  roleId = 0;
 
 
   ngOnInit(): void {
    this.getIncomes();
    this.displayUsers();
+   this.ubService.roleId$.subscribe(roleId => {
+    if(roleId !== null) {
+      console.log("Rola", roleId);
+      this.roleId = roleId;
+    }
+  });
   }
 
   onSubmit() {

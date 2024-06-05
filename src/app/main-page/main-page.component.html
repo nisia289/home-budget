@@ -7,12 +7,22 @@
   <div style="color: red; font-size: x-large;">Łączne wydatki: {{summary.totalExpenditure}}</div>
 
   <div class="monthText">
-    <h3>{{this.month.toUpperCase()}}</h3>
+    <h3>{{this.month.toUpperCase()}} {{this.currentYear}}</h3>
    </div>
-   <div class="container">
+
+   <div class="middle-container">
+    <div class="left-middle" (click)="previousMonth()">
+      <
+    </div>
+    <div class="right-middle"  (click)="nextMonth()">
+      >
+    </div>
+  </div>
+
+   <div class="container" *ngIf="this.refreshPage == true">
     <div class="row" *ngFor="let week of [[1,2,3,4,5,6,7], [8,9,10,11,12,13,14], [15,16,17,18,19,20,21], [22,23,24,25,26,27,28], generateLastRow()]">
       <div class="square" *ngFor="let day of week">
-        <div (click)="goToTest()">
+        <div>
          {{day}}
          <div *ngIf="getSummaryForDay(day).totalIncome > 0" class="income">
           {{ getSummaryForDay(day).totalIncome }}

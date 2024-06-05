@@ -116,6 +116,8 @@ h2:after {
 }
 
 .container {
+  position: relative;
+  top: -70px;
   text-align: center;
   margin:auto;
   width: 46%;
@@ -189,7 +191,32 @@ h2:after {
 }
 
 
+.middle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
 
+.left-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-middle:hover{
+  cursor: pointer;
+}
+
+.left-middle:hover{
+  cursor: pointer;
+}
 
 
 

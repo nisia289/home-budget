@@ -5,7 +5,6 @@ export class OplataModel {
   category: string = '';
   description: string = '';
   supplier: string = '';
-  status: string = 'aktualna';
   budgetId: number = 0;
   userId: number = 0;
 }

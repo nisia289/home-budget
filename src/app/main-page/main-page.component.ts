@@ -6,6 +6,7 @@ import { TransakcjeService } from '../shared/transakcje.service';
 import { DailySummariesModel } from '../shared/daily-summaries.model';
 import { BudgetService } from '../shared/budget.service';
 import { SummaryModel } from '../shared/summary.model';
+import { UserBudgetsService } from '../shared/user-budgets.service';
 
 
 @Component({
@@ -17,7 +18,7 @@ import { SummaryModel } from '../shared/summary.model';
 export class MainPageComponent implements OnInit {
 
   constructor(private router: Router, public service: CrudTestService, private transakcjeService: TransakcjeService,
-    private budgetService: BudgetService) {}
+    private budgetService: BudgetService, private ubService: UserBudgetsService) {}
 
 
   przychodyClicked = false;
@@ -37,6 +38,7 @@ export class MainPageComponent implements OnInit {
   userId: number = 0;
   dailySummaries: DailySummariesModel[] = [];
   summary: SummaryModel = new SummaryModel;
+  refreshPage = false;
 
 
   ngOnInit(): void {
@@ -44,6 +46,7 @@ export class MainPageComponent implements OnInit {
     this.getMonthlyData();
     this.getSummary();
     console.log(this.userId);
+    console.log(this.refreshPage);
   }
 
   toggleOption(optionId: string) {
@@ -121,10 +124,14 @@ export class MainPageComponent implements OnInit {
   }
 
   getMonthlyData() {
+    this.refreshPage = false;
+    console.log(this.refreshPage);
     this.transakcjeService.getMonthlyData(this.currentYear, this.currentMonthNumber, this.budgetService.newBudgetId).subscribe({
       next: (data) => {
         this.dailySummaries = data;
-        console.log(this.dailySummaries);
+        console.log("Daily summaries"+this.dailySummaries);
+        this.refreshPage = true;
+        console.log(this.refreshPage);
       },
       error: (error) => {
         console.error('Error fetching monthly data:', error);
@@ -133,7 +140,7 @@ export class MainPageComponent implements OnInit {
   }
 
   getSummaryForDay(dayNumber: number) {
-    const dateString = new Date(this.currentYear, this.currentMonthNumber - 1, dayNumber).toISOString().slice(0, 10);
+    const dateString = new Date(this.currentYear, this.currentMonthNumber - 1, dayNumber+1).toISOString().slice(0, 10);
     const summary = this.dailySummaries.find(s => s.day.startsWith(dateString));
     return summary || { day: dayNumber, totalIncome: 0, totalExpenditure: 0 };
   }
@@ -150,10 +157,57 @@ export class MainPageComponent implements OnInit {
     });
   }
 
+  nextMonth() {
+    if(this.currentMonthNumber == 12) {
+      this.currentMonthNumber = 1;
+      this.currentYear++;
+      this.currentDate = new Date(this.currentYear, this.currentMonthNumber - 1);
+      this.month = this.currentDate.toLocaleString('default', {month: 'long'});
+      this.numberOfDays = this.getDaysInMonth(this.currentMonthNumber, this.currentYear);
+      this.getMonthlyData();
+      this.getSummary();
+      this.lastRow = [];
+      this.generateLastRow();
+    }
+    else {
+    this.currentMonthNumber++;
+    this.numberOfDays = this.getDaysInMonth(this.currentMonthNumber, this.currentYear);
+    this.currentDate = new Date(this.currentYear, this.currentMonthNumber - 1);
+    this.month = this.currentDate.toLocaleString('default', {month: 'long'});
+    this.getMonthlyData();
+    this.getSummary();
+    this.lastRow = [];
+    this.generateLastRow();
+    }
+    this.refreshPage = false;
+    this.refreshPage = true;
+  }
 
-
-
-
-
+  previousMonth() {
+    if(this.currentMonthNumber == 1) {
+      this.currentMonthNumber = 12;
+      this.currentYear--;
+      this.currentDate = new Date(this.currentYear, this.currentMonthNumber - 1);
+      this.month = this.currentDate.toLocaleString('default', {month: 'long'});
+      this.numberOfDays = this.getDaysInMonth(this.currentMonthNumber, this.currentYear);
+      this.getMonthlyData();
+      this.getSummary();
+      this.lastRow = [];
+      this.generateLastRow();
+    }
+    else {
+    this.currentMonthNumber--;
+    this.numberOfDays = this.getDaysInMonth(this.currentMonthNumber, this.currentYear);
+    this.currentDate = new Date(this.currentYear, this.currentMonthNumber - 1);
+    this.month = this.currentDate.toLocaleString('default', {month: 'long'});
+    this.getMonthlyData();
+    this.getSummary();
+    this.lastRow = [];
+    this.generateLastRow();
+    }
+    this.refreshPage = false;
+    this.refreshPage = true;
+    }
 
 }
+

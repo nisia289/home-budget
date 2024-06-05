@@ -6,6 +6,8 @@ import { OplataModel } from '../shared/oplata.model';
 import { PaymentStatusService } from '../shared/payment-status.service';
 import { CrudTest } from '../shared/crud-test.model';
 import { UserBudgetsService } from '../shared/user-budgets.service';
+import { WydatkiService } from '../shared/wydatki.service';
+import { WydatekModel } from '../shared/wydatek.model';
 
 @Component({
   selector: 'app-oplaty',
@@ -14,7 +16,7 @@ import { UserBudgetsService } from '../shared/user-budgets.service';
 })
 export class OplatyComponent implements OnInit {
   constructor(public budgetService: BudgetService, public userService: CrudTestService, public oplatyService: OplatyService,
-    public paymentStatus: PaymentStatusService, private ubService: UserBudgetsService
+    public paymentStatus: PaymentStatusService, public ubService: UserBudgetsService, private wydatkiService: WydatkiService
   ){}
   budgetName: string = '';
   oplata: OplataModel = new OplataModel();
@@ -22,10 +24,19 @@ export class OplatyComponent implements OnInit {
   groupedPayments: { date: string, payments: any[] }[] = [];
   users: CrudTest[] = [];
   selectedUserId: number = 0;
+  roleId = 0;
+  wydatek: WydatekModel = new WydatekModel();
 
   ngOnInit(): void {
     this.getPayments();
     this.displayUsers();
+
+    this.ubService.roleId$.subscribe(roleId => {
+      if(roleId !== null) {
+        console.log("Rola", roleId);
+        this.roleId = roleId;
+      }
+    });
   }
 
   onSubmit() {
@@ -36,7 +47,6 @@ export class OplatyComponent implements OnInit {
       this.oplata.category,
       this.oplata.description,
       this.oplata.supplier,
-      this.oplata.status,
       this.budgetService.newBudgetId,
       this.userService.userID
     ).subscribe(
@@ -110,6 +120,48 @@ export class OplatyComponent implements OnInit {
     }
     else
     this.getPaymentsByUser();
+  }
+
+  completePayment(payment: any) {
+    this.wydatek.expenditureId = 0;
+    this.wydatek.amount = payment.amount;
+    this.wydatek.budgetId = this.budgetService.clickedBudget.budgetId;
+    this.wydatek.category = payment.category;
+    this.wydatek.date = payment.date;
+    this.wydatek.description = payment.description;
+    this.wydatek.supplier = payment.supplier;
+    this.wydatek.userId = this.userService.userID;
+
+    this.wydatkiService.addExpenditure(
+      this.wydatek.expenditureId,
+      this.wydatek.amount,
+      this.wydatek.date,
+      this.wydatek.category,
+      this.wydatek.description,
+      this.wydatek.supplier,
+      this.budgetService.newBudgetId,
+      this.userService.userID
+    ).subscribe(
+      (response: any) => {
+        console.log('Dodano nowy wydatek:', response);
+        this.removePayment(payment.paymentId);
+        this.getPayments();
+      },
+      (error: any) => {
+        console.error('Błąd podczas dodawania wydatku:', error);
+      }
+    );
+  }
+
+  removePayment(paymentId: number): void {
+    this.oplatyService.deletePayment(paymentId).subscribe(
+      () => {
+        console.log('Płatność została usunięta.'); // Reakcja na sukces
+      },
+      (error: any) => {
+        console.error('Wystąpił błąd podczas usuwania płatności:', error); // Obsługa błędu
+      }
+    );
   }
 
 }

@@ -14,7 +14,7 @@ import { UserBudgetsService } from '../shared/user-budgets.service';
 export class WydatkiComponent {
 
   constructor(private wydatkiService: WydatkiService, private budgetService: BudgetService, private userService: CrudTestService,
-    private ubService: UserBudgetsService
+    public ubService: UserBudgetsService
   ){}
 
   budgetName: string = '';
@@ -23,11 +23,19 @@ export class WydatkiComponent {
   groupedExpenditures: any[] = [];
   users: CrudTest[] = [];
   selectedUserId: number = 0;
+  roleId = 0;
 
 
   ngOnInit(): void {
     this.getExpenditures();
     this.displayUsers();
+
+    this.ubService.roleId$.subscribe(roleId => {
+      if(roleId !== null) {
+        console.log("Rola", roleId);
+        this.roleId = roleId;
+      }
+    });
   }
 
   onSubmit() {
@@ -37,6 +45,7 @@ export class WydatkiComponent {
       this.wydatek.date,
       this.wydatek.category,
       this.wydatek.description,
+      '',
       this.budgetService.newBudgetId,
       this.userService.userID
     ).subscribe(

@@ -12,8 +12,9 @@ export class OplatyService {
   urlToGet: string = 'https://localhost:7216/api/Payments/Budget/';
   urlToAdd: string = 'https://localhost:7216/api/Payments';
   urlToGetByUserId = 'https://localhost:7216/api/Payments/user';
+  urlToDeletePayment: string = 'https://localhost:7216/api/Payments';
 
-  addPayments(paymentId: number, amount: number, date: Date, category: string, description: string, supplier: string, status: string, budgetId: number, userId: number): Observable<any> {
+  addPayments(paymentId: number, amount: number, date: Date, category: string, description: string, supplier: string, budgetId: number, userId: number): Observable<any> {
     const payment = {
       paymentId: paymentId,
       amount: amount,
@@ -21,7 +22,6 @@ export class OplatyService {
       category: category,
       description: description,
       supplier: supplier,
-      status: status,
       budgetId: budgetId,
       userId: userId
     }
@@ -37,5 +37,9 @@ export class OplatyService {
   getSpecificUserPayments(userId: number, budgetId: number): Observable<any[]> {
     console.log(`${this.urlToGetByUserId}/${userId}/budget/${budgetId}`);
     return this.http.get<any[]>(`${this.urlToGetByUserId}/${userId}/budget/${budgetId}`);
+  }
+
+  deletePayment(paymentId: number): Observable<any> {
+    return this.http.delete(`${this.urlToDeletePayment}/${paymentId}`);
   }
 }

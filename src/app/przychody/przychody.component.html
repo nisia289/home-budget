@@ -6,14 +6,14 @@
       <h1>{{budgetName}}</h1>
       <h1>Przychody</h1>
       <br />
-      <div>
+      <div *ngIf="this.roleId == 1 || this.roleId == 2 || this.roleId == 3">
         <label for="dropdown"></label>
         <select id="dropdown"[(ngModel)]="selectedUserId" (change)="onSelect(selectedUserId)">
           <option [value] = "0">wszyscy</option>
           <option *ngFor="let user of users" [value]="user.userId">{{ user.username }}</option>
         </select>
       </div>
-      <div class="row">
+      <div class="row" *ngIf="this.roleId == 1 || this.roleId == 2 || this.roleId == 3">
         <div class="col-12 mb-3" *ngFor="let group of groupedIncomes">
           <h2>{{ group.date | date }}</h2>
           <h3>Łączny przychód {{ group.total }}</h3>
@@ -42,7 +42,7 @@
 
     </div>
     <div class="col-md-4">
-      <div class="form-container p-3 bg-light rounded" style="position: fixed; top: 50px; right: 20px;">
+      <div class="form-container p-3 bg-light rounded" style="position: fixed; top: 50px; right: 20px;" *ngIf="this.roleId != 3">
         <form (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label for="kwota">Kwota</label>

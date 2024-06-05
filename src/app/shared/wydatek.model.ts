@@ -4,6 +4,8 @@ export class WydatekModel {
   date: Date = new Date('2022-01-01');
   category: string = '';
   description: string = '';
+  supplier: string = '';
   budgetId: number = 0;
   userId: number = 0;
+
 }

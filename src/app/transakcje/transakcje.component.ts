@@ -3,6 +3,7 @@ import { TransakcjeService } from '../shared/transakcje.service';
 import { TransakcjaModel } from '../shared/transakcja.model';
 import { BudgetService } from '../shared/budget.service';
 import { CrudTestService } from '../shared/crud-test.service';
+import { UserBudgetsService } from '../shared/user-budgets.service';
 @Component({
   selector: 'app-transakcje',
   templateUrl: './transakcje.component.html',
@@ -10,10 +11,21 @@ import { CrudTestService } from '../shared/crud-test.service';
 })
 export class TransakcjeComponent implements OnInit {
 
-  constructor(private transakcjeService: TransakcjeService, private budgetService: BudgetService, private userService: CrudTestService){}
+  constructor(private transakcjeService: TransakcjeService, private budgetService: BudgetService, private userService: CrudTestService,
+    public ubService: UserBudgetsService
+  ){}
+
+  roleId = 0;
 
   ngOnInit(): void {
       this.getTransactions();
+
+      this.ubService.roleId$.subscribe(roleId => {
+        if(roleId !== null) {
+          console.log("Rola", roleId);
+          this.roleId = roleId;
+        }
+      });
   }
 
   budgetName: string = '';

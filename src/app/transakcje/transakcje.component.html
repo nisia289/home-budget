@@ -6,7 +6,7 @@
       <h1>{{budgetName}}</h1>
       <h1>Zrealizowane transakcje</h1>
 
-      <div class="row">
+      <div class="row" *ngIf="this.roleId == 1 || this.roleId == 2 || this.roleId == 3">
         <div class="col-12 mb-3" *ngFor="let group of groupedTransactions">
           <h3>{{ group.date | date }}</h3>
           <div *ngFor="let transaction of group.transactions">

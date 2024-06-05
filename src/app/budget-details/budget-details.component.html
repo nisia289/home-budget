@@ -1,17 +1,53 @@
-ID: {{budgetService.clickedBudget.budgetId}}
-NAME: {{budgetService.clickedBudget.name}}
-DESCRIPTION: {{budgetService.clickedBudget.description}}
-  <body>
-    <div class="container">
-      <h1>Dodaj członka budżetu domowego</h1>
+
+  <body *ngIf="switcher == false">
+    <div class="container" *ngIf="switcher == false">
+      <h1>Dodaj użytkownika do budżetu domowego lub wybierz aktywny budżet</h1>
       <form>
-        <div>
+        <div *ngIf="this.roleId == 1">
       <label for="username">Nazwa użytkownika:</label>
       <input type="text" id="username" [(ngModel)]="foundUsername" name="username">
     </div>
-  <button type="submit" (click)="submitForm()">Zatwierdź</button>
+  <button type="submit" (click)="submitForm()" *ngIf="this.roleId == 1">Zatwierdź</button>
   <button type="submit" (click)="selectBudget()">Wybierz budżet</button>
 
       </form>
   </div>
+</body>
+
+<body *ngIf="switcher == true">
+  <div class="container">
+    <h1>Wybierz rolę dla nowego użytkownika</h1>
+    <div class="role" id="1" (click)="selectRole(1)">
+      <div class="role-name">
+        Administrator
+      </div>
+      <div class="role-description">
+        Dodawanie użytkowników, przeglądanie danych budżetu, tworzenie
+      </div>
+    </div>
+    <div class="role" id="2" (click)="selectRole(2)">
+      <div class="role-name">
+        Pełny
+      </div>
+      <div style="margin-left: 14%;">
+        Przeglądanie danych budżetu, tworzenie
+      </div>
+    </div>
+    <div class="role" id="3" (click)="selectRole(3)">
+      <div class="role-name">
+        Czytelnik
+      </div>
+      <div style="margin-left: 10%;">
+         Przeglądanie danych budżetu
+      </div>
+    </div>
+    <div class="role" id="4" (click)="selectRole(4)">
+      <div class="role-name">
+        Kreator
+      </div>
+      <div style="margin-left: 11.5%;">
+         Tworzenie
+      </div>
+    </div>
+</div>
 </body>
