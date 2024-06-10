@@ -39,9 +39,16 @@ export class MainPageComponent implements OnInit {
   dailySummaries: DailySummariesModel[] = [];
   summary: SummaryModel = new SummaryModel;
   refreshPage = false;
+  roleId = 0;
 
 
   ngOnInit(): void {
+    this.ubService.roleId$.subscribe(roleId => {
+      if(roleId !== null) {
+        console.log("Rola", roleId);
+        this.roleId = roleId;
+      }
+    });
     this.fetchUserId(this.username);
     this.getMonthlyData();
     this.getSummary();

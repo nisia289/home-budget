@@ -3,8 +3,8 @@
   <div class="hello">
   <h2 data-text="Dzień Dobry Maciej"> Dzień Dobry {{username}}</h2>
   </div>
-  <div style="color: green; font-size: x-large;">Łączny przychód: {{summary.totalIncome}}</div>
-  <div style="color: red; font-size: x-large;">Łączne wydatki: {{summary.totalExpenditure}}</div>
+  <div style="color: green; font-size: x-large;" *ngIf="this.roleId != 4">Łączny przychód: {{summary.totalIncome}}</div>
+  <div style="color: red; font-size: x-large;" *ngIf="this.roleId != 4">Łączne wydatki: {{summary.totalExpenditure}}</div>
 
   <div class="monthText">
     <h3>{{this.month.toUpperCase()}} {{this.currentYear}}</h3>
@@ -24,10 +24,10 @@
       <div class="square" *ngFor="let day of week">
         <div>
          {{day}}
-         <div *ngIf="getSummaryForDay(day).totalIncome > 0" class="income">
+         <div *ngIf="getSummaryForDay(day).totalIncome > 0 && this.roleId != 4" class="income">
           {{ getSummaryForDay(day).totalIncome }}
         </div>
-        <div *ngIf="getSummaryForDay(day).totalExpenditure > 0" class="expenditure">
+        <div *ngIf="getSummaryForDay(day).totalExpenditure > 0 && this.roleId != 4" class="expenditure">
           {{ getSummaryForDay(day).totalExpenditure }}
         </div>
         </div>

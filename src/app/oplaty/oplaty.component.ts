@@ -8,6 +8,7 @@ import { CrudTest } from '../shared/crud-test.model';
 import { UserBudgetsService } from '../shared/user-budgets.service';
 import { WydatkiService } from '../shared/wydatki.service';
 import { WydatekModel } from '../shared/wydatek.model';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-oplaty',
@@ -145,7 +146,9 @@ export class OplatyComponent implements OnInit {
       (response: any) => {
         console.log('Dodano nowy wydatek:', response);
         this.removePayment(payment.paymentId);
-        this.getPayments();
+        timer(100).subscribe(() => {
+          this.getPayments();
+        });
       },
       (error: any) => {
         console.error('Błąd podczas dodawania wydatku:', error);

@@ -62,10 +62,10 @@ export class PrzychodyComponent implements OnInit {
       const grouped = data.reduce((acc, income) => {
         const date = income.date.split('T')[0];
         if (!acc[date]) {
-          acc[date] = { incomes: [], total: 0 }; // Explicitly add total here
+          acc[date] = { incomes: [], total: 0 };
         }
         acc[date].incomes.push(income);
-        acc[date].total += income.amount;  // Assume amount is a number and add to total
+        acc[date].total += income.amount;
         return acc;
       }, {});
 
@@ -74,7 +74,7 @@ export class PrzychodyComponent implements OnInit {
         .map(date => ({
           date: date,
           incomes: grouped[date].incomes,
-          total: grouped[date].total  // Now TypeScript knows total exists
+          total: grouped[date].total
         }));
     });
   }
@@ -88,10 +88,10 @@ export class PrzychodyComponent implements OnInit {
       const grouped = data.reduce((acc, income) => {
         const date = income.date.split('T')[0];
         if (!acc[date]) {
-          acc[date] = { incomes: [], total: 0 }; // Explicitly add total here
+          acc[date] = { incomes: [], total: 0 };
         }
         acc[date].incomes.push(income);
-        acc[date].total += income.amount;  // Assume amount is a number and add to total
+        acc[date].total += income.amount;
         return acc;
       }, {});
 
@@ -100,7 +100,7 @@ export class PrzychodyComponent implements OnInit {
         .map(date => ({
           date: date,
           incomes: grouped[date].incomes,
-          total: grouped[date].total  // Now TypeScript knows total exists
+          total: grouped[date].total
         }));
     });
   }

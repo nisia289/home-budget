@@ -108,8 +108,8 @@ h2:after {
 }
 
 .monthText {
-  opacity: 0; /* Początkowa wartość przezroczystości */
-  animation: fadeIn 6s forwards; /* Ustawienie animacji */
+  opacity: 0;
+  animation: fadeIn 6s forwards;
   animation-delay: 4s;
   margin: auto;
   text-align: center;
@@ -121,8 +121,8 @@ h2:after {
   text-align: center;
   margin:auto;
   width: 46%;
-  opacity: 0; /* Początkowa wartość przezroczystości */
-  animation: fadeIn 6s forwards; /* Ustawienie animacji */
+  opacity: 0;
+  animation: fadeIn 6s forwards;
   animation-delay: 4s;
 }
 
