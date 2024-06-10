@@ -3,40 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605115914_migration-v-2-6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240605115914_migration-v-2-6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\migrations\\20240605110610_migration-v-2-5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:migrations\\20240605110610_migration-v-2-5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\expenditurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\expenditurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\userbudgetresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,12 +31,24 @@
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\expenditure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,12 +67,28 @@
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\incomescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\controllers\\expenditurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:controllers\\expenditurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\migrations\\20240605115914_migration-v-2-6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:migrations\\20240605115914_migration-v-2-6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\migrations\\20240605110610_migration-v-2-5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:migrations\\20240605110610_migration-v-2-5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD86B76F-570D-45E8-82E5-65ABDC51F99E}|BudzetDomowy.csproj|c:\\users\\macie\\onedrive\\pulpit\\.net\\backend\\migrations\\20240529121933_migration-v-2-4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -178,150 +178,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240605115914_migration-v-2-6.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605115914_migration-v-2-6.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240605115914_migration-v-2-6.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605115914_migration-v-2-6.cs",
-              "RelativeToolTip": "Migrations\\20240605115914_migration-v-2-6.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T11:59:14.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20240605110610_migration-v-2-5.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605110610_migration-v-2-5.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240605110610_migration-v-2-5.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605110610_migration-v-2-5.cs",
-              "RelativeToolTip": "Migrations\\20240605110610_migration-v-2-5.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T11:06:11.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "Models\\Payment.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Payment.cs",
-              "RelativeToolTip": "Models\\Payment.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:36:26.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Income.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Income.cs",
               "RelativeDocumentMoniker": "Models\\Income.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Income.cs",
               "RelativeToolTip": "Models\\Income.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwA0AAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T13:36:58.924Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwAwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:36:26.128Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Expenditure.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Expenditure.cs",
-              "RelativeDocumentMoniker": "Models\\Expenditure.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Expenditure.cs",
-              "RelativeToolTip": "Models\\Expenditure.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:37:38.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAA5wB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:38:55.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserBudget.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\UserBudget.cs",
-              "RelativeDocumentMoniker": "Models\\UserBudget.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\UserBudget.cs",
-              "RelativeToolTip": "Models\\UserBudget.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAgwAYAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:34:02.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:32:56.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaymentsController.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\PaymentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\PaymentsController.cs",
-              "RelativeToolTip": "Controllers\\PaymentsController.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAmwIMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:30:18.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ExpendituresController.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\ExpendituresController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExpendituresController.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\ExpendituresController.cs",
-              "RelativeToolTip": "Controllers\\ExpendituresController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwBwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:31:20.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "Models\\Role.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Role.cs",
-              "RelativeToolTip": "Models\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:35:15.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Permission.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Permission.cs",
               "RelativeDocumentMoniker": "Models\\Permission.cs",
@@ -333,80 +218,141 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:35:15.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:32:56.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserBudget.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\UserBudget.cs",
+              "RelativeDocumentMoniker": "Models\\UserBudget.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\UserBudget.cs",
+              "RelativeToolTip": "Models\\UserBudget.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:34:02.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserBudgetResponse.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\UserBudgetResponse.cs",
               "RelativeDocumentMoniker": "Models\\UserBudgetResponse.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\UserBudgetResponse.cs",
               "RelativeToolTip": "Models\\UserBudgetResponse.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA5wAcAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T13:44:59.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-18T13:40:25.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T13:23:02.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
+              "Title": "BudgetsController.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\BudgetsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BudgetsController.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\BudgetsController.cs",
+              "RelativeToolTip": "Controllers\\BudgetsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:31:49.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Expenditure.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Expenditure.cs",
+              "RelativeDocumentMoniker": "Models\\Expenditure.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Expenditure.cs",
+              "RelativeToolTip": "Models\\Expenditure.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA+wAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:37:38.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Budget.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Budget.cs",
               "RelativeDocumentMoniker": "Models\\Budget.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\Budget.cs",
               "RelativeToolTip": "Models\\Budget.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T13:38:04.702Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAwwB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T13:38:55.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAAMkAAAAAAAAAAAAiwMQAAAA3AAAA",
+              "ViewState": "AQIAAMYAAAAAAAAAAAAiwMQAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T14:02:43.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 13,
               "Title": "UserBudgetsController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\UserBudgetsController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserBudgetsController.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\UserBudgetsController.cs",
               "RelativeToolTip": "Controllers\\UserBudgetsController.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAAKMAAABIAAAA",
+              "ViewState": "AQIAALQAAAAAAAAAAAAIwDUAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T14:28:32.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
@@ -418,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "PermissionsController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\PermissionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PermissionsController.cs",
@@ -430,27 +376,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Controllers\\PaymentsController.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAIwIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:30:18.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "IncomesController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\IncomesController.cs",
               "RelativeDocumentMoniker": "Controllers\\IncomesController.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\IncomesController.cs",
               "RelativeToolTip": "Controllers\\IncomesController.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAcwH0AAAAKAAAA",
+              "ViewState": "AQIAALYAAAAAAAAAAAAUwI0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T14:30:51.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BudgetsController.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\BudgetsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BudgetsController.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\BudgetsController.cs",
-              "RelativeToolTip": "Controllers\\BudgetsController.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAADwvzkAAAAAAAAA",
+              "DocumentIndex": 18,
+              "Title": "ExpendituresController.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\ExpendituresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExpendituresController.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Controllers\\ExpendituresController.cs",
+              "RelativeToolTip": "Controllers\\ExpendituresController.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAADwvxwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:31:49.715Z"
+              "WhenOpened": "2024-03-18T14:31:20.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20240605115914_migration-v-2-6.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605115914_migration-v-2-6.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240605115914_migration-v-2-6.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605115914_migration-v-2-6.cs",
+              "RelativeToolTip": "Migrations\\20240605115914_migration-v-2-6.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T11:59:14.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20240605110610_migration-v-2-5.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605110610_migration-v-2-5.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240605110610_migration-v-2-5.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\Migrations\\20240605110610_migration-v-2-5.cs",
+              "RelativeToolTip": "Migrations\\20240605110610_migration-v-2-5.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T11:06:11.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\.net\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-18T13:40:25.826Z"
             },
             {
               "$type": "Document",

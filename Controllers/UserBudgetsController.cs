@@ -45,13 +45,13 @@ namespace BudzetDomowy.Controllers
         [HttpGet("api/budgets/byuser/{userId}")]
         public async Task<IActionResult> GetBudgetsByUserId(int userId)
         {
-            // Pobieranie ID budżetów dla danego użytkownika
+          
             var budgetIds = await _context.UserBudgets
                 .Where(ub => ub.UserId == userId)
                 .Select(ub => ub.BudgetId)
                 .ToListAsync();
 
-            // Pobieranie budżetów na podstawie znalezionych ID
+           
             var budgets = await _context.Budgets
                 .Where(b => budgetIds.Contains(b.BudgetId))
                 .ToListAsync();
@@ -147,16 +147,15 @@ namespace BudzetDomowy.Controllers
         {
             try
             {
-                // Wyszukaj rekord na podstawie podanego BudgetId i UserId
                 var userBudget = _context.UserBudgets.FirstOrDefault(ub => ub.BudgetId == budgetId && ub.UserId == userId);
 
-                // Sprawdź czy rekord istnieje
+                
                 if (userBudget == null)
                 {
                     return NotFound(); 
                 }
 
-                // Zwróć RoleId rekordu UserBudget
+                
                 return Ok(userBudget.RoleId);
             }
             catch (Exception ex)
